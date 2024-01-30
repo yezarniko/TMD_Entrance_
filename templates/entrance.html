@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}Entrance{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='entrance.css') }}"
+/>
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+  <div class="header">
+    <img
+      src="{{ url_for('static', filename='img/tmdlogofixed.png') }}"
+      alt="Logo Left"
+      class="logo-left"
+    />
+    <h1>Welcome to Our School's Entrance!</h1>
+    <img
+      src="{{ url_for('static', filename='img/tmdlogofixed.png') }}"
+      alt="Logo Right"
+      class="logo-right"
+    />
+  </div>
+
+  <div class="image-container">
+    <div class="image">
+      <img
+        src="{{ url_for('static', filename='img/g10.jpg') }}"
+        alt="Image 3"
+      />
+      <div class="overlay">
+        <a href="/g10testmyanmar">
+          <button class="hover-button">Click</button>
+        </a>
+        <p class="overlay-text">
+          Grade 10(Entrance) <br />
+          Try your best and Good Luck buddy!
+        </p>
+      </div>
+    </div>
+
+    <div class="image">
+      <img
+        src="{{ url_for('static', filename='img/g11.jpg') }}"
+        alt="Image 1"
+      />
+      <div class="overlay">
+        <a href="/g11testmyanmar">
+          <button class="hover-button">Click</button>
+        </a>
+        <p class="overlay-text">
+          Grade 11(Entrance) <br />
+          Try your best and Good Luck buddy!
+        </p>
+      </div>
+    </div>
+
+    <div class="image">
+      <img
+        src="{{ url_for('static', filename='img/g12.jpg') }}"
+        alt="Image 2"
+      />
+      <div class="overlay">
+        <a href="/g12testmyanmar">
+          <button class="hover-button">Click</button>
+        </a>
+        <p class="overlay-text">
+          Grade 12(Entracne) <br />
+          Try your best and Good Luck buddy!
+        </p>
+      </div>
+    </div>
+
+    <div class="image">
+      <img
+        src="{{ url_for('static', filename='img/quiz.jpg') }}"
+        alt="Image 3"
+      />
+      <div class="overlay">
+        <a href="/quiz">
+          <button class="hover-button">Click</button>
+        </a>
+        <p class="overlay-text">Quiz</p>
+      </div>
+    </div>
+
+    <div class="image">
+      <img
+        src="{{ url_for('static', filename='img/generalknowledge.jpg') }}"
+        alt="Image 3"
+      />
+      <div class="overlay">
+        <a href="/generalmmschoolstudentquiz/">
+          <button class="hover-button">To Myanmar</button>
+        </a>
+        <a href="/generalmmschoolstudentquiz/">
+          <button class="hover-button">To English</button>
+        </a>
+        <p class="overlay-text">
+          General Knowledge <br />
+          Try your best and Good Luck buddy!
+        </p>
+      </div>
+    </div>
+
+    <div class="button">
+      <a href="/">
+        <button>GO BACK TO MAIN PAGE</button>
+      </a>
+    </div>
+  </div>
+</body>
+{% endblock %}

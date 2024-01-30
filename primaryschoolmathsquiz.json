@@ -1,0 +1,513 @@
+
+[
+    {
+        "no": 1,
+        "question": "၈ ကုဋေ ၉ သန်း ၅ သိန်း ၄ သောင်း ၇ ထောင် ၃ ရာ ကို ကိန်းဖြင်းရေးပါ။",
+        "choices":{
+          "a": "၈၉၆၄၇၃၀",
+          "b": "၈၉၆၄၇၃၀၀",
+          "c": "၈၉၆၄၇၃၁၀၀"
+          } ,
+        "correct_answer": "b",
+         "subject":"Math Quiz"
+        },
+        {
+            "no": 2,
+            "question": "၇၀၅၀၇၄၉၅",
+            "choices":{
+              "a": "ခုနစ်ကု‌ဋေငါးသန်းခုနစ်ထောင့်‌လေးရာကိုးဆယ့်ငါး",
+              "b": "ခုနစ်ကု‌ဋေငါးသောင်းခုနစ်ထောင့်‌လေးရာကိုးဆယ့်ငါး",
+              "c": "ခုနစ်ကု‌ဋေငါးသိန်းခုနစ်ထောင့်‌လေးရာကိုးဆယ့်ငါး"
+              } ,
+            "correct_answer": "c",
+             "subject":"Math Quiz"
+            },
+            {
+              "no": 3,
+              "question": "၉၆ ကို ၄ ဖြင့်စားပါ။",
+              "choices": {
+                "a": "၂၄ ",
+                "b": "၂၉",
+                "c": "၂၂"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+            },{
+              "no": 4,
+              "question": "၃၄၈၅ တွင် ၃ ၏တန်းဖိုးမှာ",
+              "choices": {
+                "a": "၃၀၀၀၀",
+                "b": "၃၀၀၀",
+                "c": "၃၀၀"
+              },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 5,
+              "question": "၃.၂___၁.၈ မှ ကွက်လပ်နေရာတွင် အောက်ပါတို့မှ မည်သည့်လက္ခဏာထည့်ရမည်နည်း။",
+              "choices": {
+                "a": "=",
+                "b": "<",
+                "c": ">"
+              },
+              "correct_answer": "c",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 6,
+              "question": "၃ နှစ်တွင်____လရှိသည်။",
+              "choices": {
+                "a": "၃၆",
+                "b": "၄၈",
+                "c": "၄၀"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 7,
+              "question": "၃ ဖြင့်စား၍ ပြတ်သောကိန်းမှာ",
+              "choices": {
+                "a": "၂၀",
+                "b": "၂၁",
+                "c": "၂၂"
+              },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 8,
+              "question": "၁ နာရီတွင်ရှိတွင်သောစက္ကန့်ကို ရှာပါ။",
+              "choices": {
+                "a": "၃၆၀၀",
+                "b": "၃၆၀",
+                "c": "၃၆၀၀၀"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 9,
+              "question": "စက်ဝိုင်းခြမ်းတစ်ခုတွင် ဒီဂရီမည်မျှရှိမည်နည်း။",
+              "choices": {
+                "a": "၃၆၀  ဒီဂရီ",
+                "b": "၁၈၀ ဒီဂရီ",
+                "c": "၉၀ ဒီဂရီ"
+              },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 10,
+              "question": "အောက်ပါတို့မှ အပိုင်းကိန်းစစ်ကိုရှာပါ။",
+              "choices": {
+                "a": "၉/၂",
+                "b": "၁၂/၅",
+                "c": "၇/၈"
+              },
+              "correct_answer": "c",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 11,
+              "question": "၆/၅+၁၁/၅",
+              "choices": {
+                "a": "၁၆/၅",
+                "b": "၁၈/၅",
+                "c": "၁၇/၅"
+              },
+              "correct_answer": "c",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 12,
+              "question": "၅ ပေ ၃ လက်မ တွင်_____ရှိသည်။",
+              "choices": {
+                "a": "၁၂ လက်မ",
+                "b": "၁၃ လက်မ",
+                "c": "၁၄ လက်မ"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 13,
+              "question": "၄၅ ကိုက် ၂ ပေ တွင် _____ရှိသည်။",
+              "choices": {
+                "a": "၁၆",
+                "b": "၁၇",
+                "c": "၁၈"
+              },
+
+
+"correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 14,
+              "question": "၄ ပေ ၈ လက်မ + ၂ ပေ ၅ လက်မ",
+              "choices": {
+                "a": "၇ ပေ ၁ လက်မ",
+                "b": "၇ ပေ",
+                "c": "၇ ပေ ၂ လက်မ"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 15,
+              "question": "အောက်ပါတွင်မည်သည့်ဂဏန်းသည်အကြီးဆုံးဖြစ်သနည်း။",
+              "choices": {
+                "a": "၀.၁၉",
+                "b": "၀.၂၂",
+                "c": "၀.၂၁၂"
+              },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 16,
+              "question": "၂,၄,၈,၁၆,.........?",
+              "choices": {
+                "a": "၆၄",
+                "b": "၁၇",
+                "c": "၃၂"
+              },
+              "correct_answer": "c",
+              "subject": "Math Quiz"
+            },
+            {
+              "no": 17,
+              "question": "ပထမသဘာဝကိန်း၁၀ခု၏ပေါင်းလဒ်မှာ",
+              "choices":{
+                "a": "၄၅",
+                "b": "၅၀",
+                "c": "၅၅"
+                } ,
+              "correct_answer": "a",
+               "subject":"Math Quiz"
+              },
+            
+            {
+              "no": 18,
+              "question": "အောက်ပါတို့တွင် သုဒ္ဓကိန်းမှာ",
+              "choices": {
+                "a": "၀",
+                "b": "၁၁",
+                "c": "၁"
+              },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+            },
+            {
+            "no": 19,
+            "question": "၁၂ ကို ၉၉ ဖြင့်မြှောက်ပါ။",
+            "choices": {
+            "a": "၁၁၈၈",
+            "b": "၁၈၁၈",
+            "c": "၁၈၀၀"
+            },
+            "correct_answer": "a",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 20,
+            "question": "၁/၂=",
+            "choices": {
+            "a": "၀.၂",
+            "b": "၀.၁",
+            "c": "၀.၅"
+            },
+            "correct_answer": "c",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 21,
+            "question": "၁/၂___၁/၃ မှ ကွက်လပ်တွင် မည်သည့် လက္ခဏာကို သုံးရမည်နည်း။",
+            "choices": {
+            "a": "<",
+            "b": ">",
+            "c": "="
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 22,
+            "question": "၀ သည်______ဖြစ်သည်။",
+            "choices": {
+            "a": "သုဒ္ဓကိန်း",
+            "b": "မကိန်း",
+            "c": "စုံကိန်း"
+            },
+            "correct_answer": "c",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 23,
+            "question": "452နှင့်150ပေါင်းလျှင်အဖြေမှာ____ဖြစ်သည်။",
+            "choices": {
+            "a": "၅၄၀",
+            "b": "၆၀၂",
+            "c": "၆၂၀"
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 24,
+            "question": "၁.၂ နှင့် ၁.၂ ပေါင်းလျှင်___ဖြစ်သည်။",
+            "choices": {
+            "a": "၃",
+            "b": "၂",
+            "c": "၁"
+            },
+            "correct_answer": "a",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 25,
+            "question": "၂၅×၅၏အဖြေမှာ____ဖြစ်သည်။",
+            "choices": {
+            "a": "၁၅၂",
+            "b": "၁၂၅",
+            "c": "၁၅၀"
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 25,
+            "question": "၁၀၀ စင်တီမီတာသည်__နှင့်တူသည်။",
+            "choices": {
+            "a": "၁ လက်မ",
+            "b": "၁ မီတာ",
+            "c": "၁ ဒက်စီမီတာ"
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 26,
+
+"question": "အောက်ပါတို့မှ တစ်ရာကု‌ဋေကိုရွေးပါ။",
+            "choices": {
+            "a": "၁၀၀၀၀၀၀၀၀",
+            "b": "၁၀၀၀၀၀၀၀၀၀၀",
+            "c": "၁၀၀၀၀၀၀၀၀၀"
+            },
+            "correct_answer": "c",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 27,
+            "question": "၁၀ ကု‌ဋေသည် ၁ သန်း၏ အဆမည်မျှရှိသနည်း။ ",
+            "choices": {
+            "a": "၁၀၀",
+            "b": "၁၀",
+            "c": "၁၀၀၀"
+            },
+            "correct_answer": "a",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 28,
+            "question": "မည်သည့်ကိန်းသည် ၁ သိန်း ၏ ၁၀၀ ဆ ဖြစ်သနည်း။",
+            "choices": {
+            "a": "၁ ကုဋေ",
+            "b": "၁ သန်း",
+            "c": "၁၀ ကုဋေ"
+            },
+            "correct_answer": "a",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 29,
+            "question": "နောက်မိနစ်၃၀နေလျှင်၁၂:၃၀ သည်_သို့ရောက်မည်။",
+            "choices": {
+            "a": "၁၂ နာရီ",
+            "b": "၁ နာရီ",
+            "c": "၁ နာရီခွဲ "
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+            "no": 30,
+            "question": "အ‌နားစောင်းတစ်ဖက်လျှင် ၂စင်တီမီတာရှိသောကုဗတုံး၏ထုထည်မှာ___ကုဗစင်တီမီတာဖြစ်သည်။",
+            "choices": {
+            "a": "၇",
+            "b": "၈",
+            "c": "၉"
+            },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+            },
+            {
+              "no": 31,
+              "question": "၀၊ ၁၊ ၂၊ ၃၊ ၄၊ ၅၊ ၆၊ ၇၊ ၈၊ ၉ ဂဏန်းများကို မထပ်စေဘဲ ၉ လုံးပါ အကြီးဆုံးကိန်းကို ပြုလုပ်ပါ။",
+              "choices": {
+              "a": "၉၈၇၆၅၄၃၂၁",
+              "b": "၉၈၇၆၅၄၃၂၀",
+              "c": "၉၀၇၆၅၄၃၂၀"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+              },
+             { "no": 32,
+              "question": "၉၅ သန်းကို ကိန်းဖြင့်ဖော်ပြပါ။",
+             "choices": {
+             "a": "၉၅၀၀၀၀၀",
+               "b": "၉၅၀၀၀၀၀၀",
+              "c": "၉၀၀၀၀၀၀၀"
+               },
+              "correct_answer": "b",
+              "subject": "Math Quiz"
+             },
+            {
+            "no": 33,
+            "question": "၅၂ ကို ၁၄ ဖြင့်စားလျှင် အကြွင်းမှာ",
+            "choices": {
+             "a": "၁၂",
+             "b": "၁၁",
+            "c": "၁၀"
+             },
+            "correct_answer": "c",
+             "subject": "Math Quiz"
+             },
+            {
+            "no": 34,
+            "question": "၂*၃*၅*၀",
+            "choices": {
+            "a": "၂၅",
+             "b": "၃၀",
+             "c":"၀"
+             },
+             "correct_answer": "c",
+             "subject": "Math Quiz"
+             },
+             {
+             "no": 35,
+             "question": "ထောင့်ကျဉ်းတြိဂံတစ်ခု၏ အတွင်းထောင့် ၃ ထောင့်ပေါင်းခြင်းသည် မည်မျှနည်း။",
+             "choices": {
+             "a": "၁၈၀ ဒီဂရီ",
+             "b": "၃၆၀ ဒီဂရီ",
+              "c": "၂၄၀ ဒီဂရီ"
+               },
+              "correct_answer": "a",
+             "subject": "Math Quiz"
+              },
+              {
+              "no": 36,
+             "question": "၁ လက်မတွင် _______ စင်တီမီတာခန့်ရှိသည်။",
+             "choices": {
+              "a": "၀.၅",
+              "b": "၁.၅",
+              "c": "၂.၅"
+               },
+              "correct_answer": "c",
+               "subject": "Math Quiz"
+               },
+              {
+               "no": 37,
+              "question": "၁ နှစ်တွင်စက္ကန့်မည်မျှရှိသနည်း။",
+            "choices": {
+              "a": "၃၁၅၀၃၆၀၀",
+             "b": "၃၁၅၃၆၀၀၀",
+             "c": "၃၁၅၀၃၆၀၀၀"
+             },
+             "correct_answer": "b",
+              "subject": "Math Quiz"
+             },        
+              {
+              "no": 38,
+              "question": "တြာပီဇီယမ်တွင် အနားမည်မျှရှိသနည်း။ ",
+              "choices": {
+              "a": "၈",
+              "b": "၆",
+              "c": "၄"
+              },
+              "correct_answer": "c",
+             "subject": "Math Quiz"
+
+
+}, 
+              {
+              "no": 39,
+              "question": "ရွမ်းဗတ်ပုံ၏ထောင့်ဖြတ်မျဉ်း_______ကြောင်းသည် တစ်ခုပေါ် တစ်ခုထောင့်မတ်ကျသည်။ ",
+              "choices": {
+             "a": "၂",
+              "b": "၄",
+             "c": "၆"
+              },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+              }, 
+              {
+             "no": 40,
+            "question": "စတုရန်းပုံ၏ထောင့်ဖြတ်မျဉ်း ၂ ကြောင်းသည် အလျားတူညီပြီး တစ်ခု‌ပေါ်တစ်ခု ",
+            "choices": {
+             "a": "ထောင့်မတ်မကျပါ။",
+            "b": "ထောင့်မတ်ကျသည်။",
+            "c": "ထပ်နေသည်။"
+             },
+            "correct_answer": "b",
+            "subject": "Math Quiz"
+             },   
+             {
+             "no": 41,
+             "question": "၁၆၃၂၄ - ၈၀၁၉",
+             "choices": {
+             "a": "၈၀၀၀ ခန့်",
+             "b": "၇၀၀၀ ခန့်",
+             "c": "၆၀၀၀ ခန့်"
+             },
+              "correct_answer": "a",
+             "subject": "Math Quiz"
+             }, 
+             {
+             "no":42,
+             "question": " ၁၀၀ ကို ၁၀၀၀၀ ဖြင့်မြှောက်ပါ။",
+             "choices": {
+             "a": "၁၀၀၀၀၀၀၀၀",
+             "b": "၁၀၀၀၀၀၀၀",
+             "c": "၁၀၀၀၀၀၀"
+              },
+             "correct_answer": "c",
+              "subject": "Math Quiz"
+             }, 
+              {
+              "no":43,
+              "question": "၃ ကို မည်သည့် ကိန်း နှင့် မြှောက်လျှင် ၆၀ ရမည်နည်း။",
+             "choices": {
+             "a": "၂၀",
+             "b": "၃၀",
+             "c": "၄၀"
+             },
+              "correct_answer": "a",
+              "subject": "Math Quiz"
+             },    
+              {
+             "no":44,
+             "question": "၅/၇၊ ၅/၆၊ ၄/၇ တို့တွင် မည်သည်က အငယ်ဆုံးဖြစ်သနည်း။",
+             "choices": {
+             "a": "၅/၇",
+              "b": "၄/၇",
+              "c": "၅/၆"
+              },
+              "correct_answer": "b",
+             "subject": "Math Quiz"
+             },   
+              {
+             "no":45,
+              "question": "စတုရန်းတစ်ခု၏ဧရိယာပုံသေနည်းမှာ",
+             "choices": {
+              "a": "အလျား*အ‌ခြေ",
+             "b": "အလျား*အနံ",
+             "c": "အလျား*အမြင့်"
+             },
+             "correct_answer": "b",
+             "subject": "Math Quiz"
+              }                                       
+            ]

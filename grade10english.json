@@ -1,0 +1,333 @@
+[
+  {
+    "no": 1,
+    "question": "This is the best cake ____________ tasted!",
+    "choices": {
+      "a": "I've ever",
+      "b": "I am",
+      "c": "I am ever"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 2,
+    "question": "Can you pass me the salt, please? It's ___________ the table.",
+    "choices": {
+      "a": "above",
+      "b": "on",
+      "c": "in"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 3,
+    "question": "Our package tour will__________both lunch and dinner.",
+    "choices": {
+      "a": "pass",
+      "b": "provide",
+      "c": "popularize"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 4,
+    "question": "Which sentence is correct?",
+    "choices": {
+      "a": "She's just arrived.",
+      "b": "She've already arrived.",
+      "c": "She hasn't arrive yet."
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 5,
+    "question": "What is the synonym for 'Happy'",
+    "choices": {
+      "a": "joyful",
+      "b": "hilarious",
+      "c": "adorable"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 6,
+    "question": "Which word mean 'extremely interested'?",
+    "choices": {
+      "a": "extremely exciting",
+      "b": "motivated",
+      "c": "fascinated"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 8,
+    "question": "Which word means 'an intense feeling of deep affection'?",
+    "choices": {
+      "a": "love",
+      "b": "effect",
+      "c": "affection"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 9,
+    "question": "What is the synonym for 'Happy'",
+    "choices": {
+      "a": "joyful",
+      "b": "hilarious",
+      "c": "adorable"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 10,
+    "question": "I don't mind ________ by myslef.I do not need your assistance.",
+    "choices": {
+      "a": "to do",
+      "b": "do",
+      "c": "doing"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 11,
+    "question": "What is the synonym for 'Happy'",
+    "choices": {
+      "a": "joyful",
+      "b": "hilarious",
+      "c": "adorable"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 12,
+    "question": "If I had known about the traffic, I ________ home earlier.",
+    "choices": {
+      "a": "will leave",
+      "b": "would have left",
+      "c": "would leave"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 13,
+    "question": "Choose the correct sentence in the third conditional:",
+    "choices": {
+      "a": "If she will have studied harder, she will pass the exam.",
+      "b": "f she studies harder, she will pass the exam.",
+      "c": " If she had studied harder, she would have passed the exam."
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 14,
+    "question": " If I won the lottery, I ________ study overseas.",
+    "choices": {
+      "a": "would",
+      "b": "will",
+      "c": " will have to"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 15,
+    "question": " Choose the correct sentence.",
+    "choices": {
+      "a": "He is always giving reasons and excuses.",
+      "b": "He is always give reasons and excuses",
+      "c": "He is always gives reasons and excuses."
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 16,
+    "question": "Which sentence is past perfect tense?",
+    "choices": {
+      "a": "I will have finished my work by 5p.m",
+      "b": "I had finished my work by 5p.m.",
+      "c": "I have finished my work by 5p.m."
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 17,
+    "question": "I am a teacher.______",
+    "choices": {
+      "a": "am I?",
+      "b": "I am not.",
+      "c": "aren't I?"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 18,
+    "question": "The book______ I recommend is on the shelve.",
+    "choices": {
+      "a": "that",
+      "b": "whom",
+      "c": " by whom"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 19,
+    "question": "The similar word for 'very good' is_______",
+    "choices": {
+      "a": "ecstatic",
+      "b": "fantastic",
+      "c": "elated"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 20,
+    "question": "The similar word for 'very fat' is_______",
+    "choices": {
+      "a": "hideous",
+      "b": "timid",
+      "c": "obese"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 21,
+    "question": "The formal way to say I'm sorry is_______",
+    "choices": {
+      "a": "Please forgivr me",
+      "b": "pardon me",
+      "c": "apology"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 22,
+    "question": "The noun form of 'satisfy' is_______",
+    "choices": {
+      "a": "satisfication",
+      "b": "satisfying",
+      "c": "satisfiment"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 23,
+    "question": "What is the word that represents the quality of being worthy of respect and honor?",
+    "choices": {
+      "a": "beauty",
+      "b": "elegance",
+      "c": "dignity"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 24,
+    "question": "I am good______playing guitar.",
+    "choices": {
+      "a": "about",
+      "b": "with",
+      "c": "at"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 25,
+    "question": "What is the word that represents the quality of being worthy of respect and honor?",
+    "choices": {
+      "a": "beauty",
+      "b": "elegance",
+      "c": "dignity"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 26,
+    "question": "Which word describes something impressively beautiful, grand, or splendid?",
+    "choices": {
+      "a": "wonderful",
+      "b": "magnificient",
+      "c": "ridiculous"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 26,
+    "question": "Which word describes something impressively beautiful, grand, or splendid?",
+    "choices": {
+      "a": "wonderful",
+      "b": "magnificient",
+      "c": "ridiculous"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 27,
+    "question": "_______I had a great fever during exam,I passed the exam with flying colour.",
+    "choices": {
+      "a": "Although",
+      "b": "However",
+      "c": "But"
+    },
+    "correct_answer": "a",
+    "subject": "English"
+  },
+  {
+    "no": 28,
+    "question": "Visa and _____ are essential if you are going to overseas.",
+    "choices": {
+      "a": "pessport",
+      "b": "passport",
+      "c": "passpord"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  },
+  {
+    "no": 29,
+    "question": "When the weather is clear in Iceland,your chances of catching and seeing the ______ are very high.",
+    "choices": {
+      "a": "icestones",
+      "b": "aeroplane",
+      "c": "aurora"
+    },
+    "correct_answer": "c",
+    "subject": "English"
+  },
+  {
+    "no": 30,
+    "question": "It_____be dangerous to drive through a red light.",
+    "choices": {
+      "a": "will",
+      "b": "can",
+      "c": "may"
+    },
+    "correct_answer": "b",
+    "subject": "English"
+  }
+]
+

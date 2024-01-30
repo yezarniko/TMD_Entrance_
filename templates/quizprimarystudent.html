@@ -1,0 +1,360 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}High School Student Quiz{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='quizmiddlestudent.css') }}"
+/>
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1>Quiz for {{level}} school Student</h1>
+      <h2 class="clock" style="position: absolute"></h2>
+    </div>
+    <div class="timer"></div>
+  </header>
+
+  <div class="container">
+    <!--  -->
+    <form action="{{url}}" method="post">
+      <!--  -->
+      {% for index, question in questions %}
+      <!--  -->
+      <div class="quiz-container">
+        <div class="question">
+          <h2>{{index+1}}. {{question["question"]}}</h2>
+        </div>
+        <!--  -->
+        {% for number, choice in question["choices"].items() %}
+        <!--  -->
+        <label class="option">
+          <input type="radio" name="{{question["no"]}}" value="{{number}}" />
+          {{number}}) {{choice}}
+        </label>
+        <!--  -->
+        {% endfor %}
+        <!--  -->
+        <!-- <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label> -->
+      </div>
+      <!--  -->
+      {% endfor %}
+      <!-- <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div>
+
+    <div class="quiz-container">
+      <div class="question">
+        <h2>What is the capital of France?</h2>
+      </div>
+
+      <label class="option">
+        <input type="radio" name="answer" value="a" /> a) Berlin
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="b" /> b) London
+      </label>
+      <label class="option">
+        <input type="radio" name="answer" value="c" /> c) Paris
+      </label>
+    </div> -->
+
+      <div class="submitbutton">
+        <button id="submit-btn" type="submit">Submit</button>
+      </div>
+    </form>
+    <section class="">
+      <!-- <button class="show-modal">Show Modal</button> -->
+
+      <div class="modal-box">
+        <div class="modal-box__icon">
+          <img src="{{ url_for('static', filename='img/deadline.png') }}" />
+        </div>
+
+        <h2>Time Out</h2>
+        <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
+
+        <div class="buttons">
+          <button class="close-btn">Ok, Close</button>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+<script>
+  var timer = document.querySelector(".timer");
+  var clockElement = document.querySelector(".clock");
+  var timeupSound = new Audio(
+    "{{ url_for('static', filename='214pJH6qg8U.m4a') }}"
+  );
+
+  var closeBTN = () => {
+    document.querySelector(".section").classList.remove("active");
+  };
+
+  const SECONDS = 900;
+  var seconds = SECONDS;
+
+  function startTimer(callback) {
+    const intervalId = setInterval(callback, 1000);
+
+    setTimeout(function () {
+      clearInterval(intervalId);
+      console.log("Timer expired");
+      timeupSound.play();
+      section.classList.add("active");
+    }, SECONDS * 1000);
+  }
+
+  function secondsToTimeFormat(seconds) {
+    const date = new Date(0);
+    date.setSeconds(seconds);
+
+    const formattedTime = date.toISOString().substr(14, 5);
+
+    return formattedTime;
+  }
+
+  startTimer(function () {
+    seconds = seconds - 1;
+    timer.style.width = `${(100 / SECONDS) * seconds}%`;
+
+    if (seconds < 60) {
+      timer.style.background = "#FF6868";
+    }
+
+    clockElement.innerHTML = secondsToTimeFormat(seconds);
+  });
+  const section = document.querySelector("section"),
+    //   overlay = document.querySelector(".overlay"),
+    //   showBtn = document.querySelector(".show-modal"),
+    closeBtn = document.querySelector(".close-btn");
+
+  // showBtn.addEventListener("click", () => section.classList.add("active"));
+
+  // overlay.addEventListener("click", () => section.classList.remove("active"));
+
+  closeBtn.addEventListener("click", () => {
+    section.classList.remove("active");
+    window.location.href = "/entrance";
+  });
+</script>
+{% endblock %}

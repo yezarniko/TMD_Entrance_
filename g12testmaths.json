@@ -1,0 +1,333 @@
+
+[
+    {
+        "no": 1,
+        "question": "If c is the root of 2x^3 - 9x = 2, then f(x) = 2x^3-9x -2 has the factor",
+        "choices":{
+          "a": "x-2 ",
+          "b": "x-c",
+          "c": "x+c"
+          } ,
+        "correct_answer": "b",
+         "subject":"Mathematics"
+        },
+    
+    {
+        "no": 2,
+        "question": "If x -2 is a factor of x^n + 9x^2 -68, then n=",
+        "choices": {
+          "a": "1",
+          "b": "2",
+          "c": "5"
+        },
+        "correct_answer": "c",
+        "subject": "Mathematics"
+      },
+{
+    "no": 3,
+    "question": "In the expansion of (x + 1/x^2 )6 , the term independent of x is the",
+    "choices": {
+      "a": "3rd term ",
+      "b": "2nd term",
+      "c": "6th term"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },{
+    "no": 4,
+    "question": "In the expansion of (k - x) 6, the coefficient of the middle term is -160, then k=",
+    "choices": {
+      "a": "1",
+      "b": "3",
+      "c": "2"
+    },
+    "correct_answer": "c",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 5,
+    "question": "The map of the (-4, 3) by the reflection on y-axis is",
+    "choices": {
+      "a": "(4,-3)",
+      "b": "(-4,-3)",
+      "c": "(3,-4)"
+    },
+    "correct_answer": "b",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 6,
+    "question": "For two numbers x and y, the A.M is 5 and the G.M is 4. Then x - y =",
+    "choices": {
+      "a": "1",
+      "b": "-1",
+      "c": "+/- 6"
+    },
+    "correct_answer": "c",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 7,
+    "question": "If two geometric means were inserted between 64 and 1, their sum could be",
+    "choices": {
+      "a": "20",
+      "b": "56",
+      "c": "64"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 8,
+    "question": "If triangle ABC is similar to triangle DEF, area of triangle ABC: area of triangle DEF=49:36, AB and DE are corresponding sides and AB + DE = 52 cm, then AB-DE in cm is ",
+    "choices": {
+      "a": "4",
+      "b": "5",
+      "c": "6"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 9,
+    "question": "Two corresponding altitudes of two similar triangles are 8cm and 10cm. Then area of smaller triangle:area of smaller triangle=",
+    "choices": {
+      "a": "9:16",
+      "b": "16:25",
+      "c": "3:4"
+    },
+    "correct_answer": "b",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 10,
+    "question": "The average marks of boys in a class is 52 and that of girls is 42.The average marks of boys and girls combined is 50. The percentage of boys in the class is",
+    "choices": {
+      "a": "80",
+      "b": "60",
+      "c": "40"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 11,
+    "question": "The marks scored in a test by six students are 20,12,17,13,8,14.The variance is",
+    "choices": {
+      "a": "86",
+      "b": "14.3",
+      "c": "0"
+    },
+    "correct_answer": "b",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 12,
+    "question": "AB and EF are tangents to the circle at A and F respectively. If AB=6,BC=3 and DE=16, then EF= ",
+    "choices": {
+      "a": "12",
+      "b": "16",
+      "c": "20"
+    },
+    "correct_answer": "c",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 13,
+    "question": "PAB and PCD are two secant segments to a circle meeting the circle at A, B, C and D.If PA =3, AB=2x+1, PC=2 and CD = 4x+1, then x=",
+    "choices": {
+      "a": "3",
+      "b": "4",
+      "c": "5"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+ {
+    "no": 14,
+    "question": "In circle o, chords AB and CD meet at P.If PA=8cm,PB=6cm and PC:PD=3:1, then PC=",
+    "choices": {
+      "a": "12",
+      "b": "6",
+      "c": "8"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 15,
+    "question": "The coordinates of X, Y and Z are (1,0),(4,2) and (5,4) respectively. If XYZW is a parallelogram, then W=",
+    "choices": { 
+      "a": "(5,2)",
+      "b": "(3,2)",
+      "c": "(2,2)"
+    },
+    "correct_answer": "c",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 16,
+    "question": "Diagonals Ac and BS of the parallelogram ABCK intersect at O.If AC = a, DB = b, then 2AD=",
+    "choices": { 
+      "a": "(5,2)",
+      "b": "(3,2)",
+      "c": "(2,2)"
+    },
+    "correct_answer": "c",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 17,
+    "question": "If tan x=2 and tan y=-1/2, then the value of tan (x + y) is",
+    "choices": { 
+      "a": "3/4",
+      "b": "3/2",
+      "c": "2/3"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 18,
+    "question": "Given that f(x)=ax^2-3x+1,f(x)=4, then the value of a is",
+    "choices": { 
+      "a": "1",
+      "b": "2",
+      "c": "4"
+    },
+    "correct_answer": "b",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 19,
+    "question": "The gardient (slope) of the curve y=3x^2-6x+9 at the point (a,b) is 6.Then a=",
+    "choices": { 
+      "a": "1",
+      "b": "2",
+      "c": "3"
+    },
+    "correct_answer": "b",
+    "subject": "Mathematics"
+  },
+  {
+    "no": 20,
+    "question": "The slope of the normal to the curve y = x-9/x,x is not equal to 0 at the point where y=4 is",
+    "choices": { 
+      "a": "-1",
+      "b": "1",
+      "c": "3"
+    },
+    "correct_answer": "a",
+    "subject": "Mathematics"
+  },
+    {
+      "no": 21,
+      "question": "If 12,x,y is an A.P and 4,12,x is a G.P., then y=",
+      "choices": { 
+        "a": "48",
+        "b": "72",
+        "c": "60"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 22,
+      "question": "If 12,x,y is an A.P and 4,12,x is a G.P., then y=",
+      "choices": { 
+        "a": "48",
+        "b": "72",
+        "c": "60"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 23,
+      "question": "If f(-0.75)=0, where f(x) is a polynomial, then which of the following may be a factor of f(x)=",
+      "choices": { 
+        "a": "3x-4",
+        "b": "4x+3",
+        "c": "3x+4"
+      },
+      "correct_answer": "b",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 24,
+      "question": "If log 4, log x, log(x + 15) is an A.P, then x=",
+      "choices": { 
+        "a": "10 or 6",
+        "b": "10 or -6",
+        "c": "10 only"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 25,
+      "question": "The A.M between log 4 and log 250 is",
+      "choices": { 
+        "a": "3/2",
+        "b": "2",
+        "c": "1"
+      },
+      "correct_answer": "a",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 26,
+      "question": "The sum to infinity of 1+1+1/2+1/4+... is",
+      "choices": { 
+        "a": "4",
+        "b": "3",
+        "c": "1"
+      },
+      "correct_answer": "b",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 27,
+      "question": "The sum to infinity of the series 1/5+1/15+1/45+1/135+... is",
+      "choices": { 
+        "a": "1/3",
+        "b": "2/15",
+        "c": "3/10"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 28,
+      "question": "The map of the point (-2,3) by the reflection on y-axis is",
+      "choices": { 
+        "a": "(-2,3)",
+        "b": "(3,-2)",
+        "c": "(2,3)"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 29,
+      "question": "Under a transformation which translate positive 2 units horizontally and positive 1 unit vertically, the map of a point P is (1,1). Then P is",
+      "choices": { 
+        "a": "(-1,o)",
+        "b": "(0,-1)",
+        "c": "(2,3)"
+      },
+      "correct_answer": "a",
+      "subject": "Mathematics"
+    },
+    {
+      "no": 30,
+      "question": "If A,B,C are the angles of a triangle and tan A=1 and tan B=2, then tan C= ",
+      "choices": { 
+        "a": "1",
+        "b": "2,",
+        "c": "3"
+      },
+      "correct_answer": "c",
+      "subject": "Mathematics"
+    }
+  ]

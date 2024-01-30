@@ -1,0 +1,155 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}Entrance Grade(10) Myanmar{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename='g10testmyanmar.css') }}"
+/>
+
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1>Grade {{grade}} ({{subject}})</h1>
+      <h2 class="clock" style="position: absolute"></h2>
+    </div>
+    <div class="timer"></div>
+  </header>
+
+  <div class="container">
+    <form method="post" action="{{ url }}">
+      {% for q in test %}
+      <div class="quiz-container">
+        <div class="question">
+          <h3>{{q["no"]}}. {{ q["question"] }}</h3>
+        </div>
+
+        {% if "choices" in q %} {% for number, choice in q["choices"].items() %}
+        <label class="option">
+          <input type="radio" name="{{q["no"]}}" value="{{number}}" >
+          {{numbering_map[number] if q["subject"] == "Myanmar" else number}})
+          {{choice}}
+        </label>
+        {% endfor %} {% else %}
+        <p>No choices available</p>
+        {% endif %}
+      </div>
+      {% endfor %}
+      <div class="submitbutton">
+        <!-- <a href="/g{{grade}}test{{numbering_map[subject]}}"> -->
+        <button id="submit-btn" type="submit">next</button>
+        <!-- </a> -->
+      </div>
+    </form>
+    <section class="">
+      <!-- <button class="show-modal">Show Modal</button> -->
+
+      <div class="modal-box">
+        <div class="modal-box__icon">
+          <img src="{{ url_for('static', filename='img/deadline.png') }}" />
+        </div>
+
+        <h2>Time Out</h2>
+        <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
+
+        <div class="buttons">
+          <button class="close-btn">Ok, Close</button>
+        </div>
+      </div>
+    </section>
+    {% if subject == "myanmar" %}
+    <section class="active section">
+      <!-- <button class="show-modal">Show Modal</button> -->
+
+      <div class="modal-box">
+        <div class="modal-box__icon">
+          <img src="{{ url_for('static', filename='img/student-card.png') }}" />
+        </div>
+        <br />
+        <h4>You are now assign as</h4>
+        <br />
+        <span style="font-size: 15px"
+          >UID: <span style="color: #3965cc">{{id}}</span></span
+        >
+
+        <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
+
+        <div class="buttons">
+          <button onclick="closeBTN()">Ok, Close</button>
+        </div>
+      </div>
+    </section>
+    {% endif %}
+  </div>
+
+  <script>
+    var timer = document.querySelector(".timer");
+    var clockElement = document.querySelector(".clock");
+    var timeupSound = new Audio(
+      "{{ url_for('static', filename='214pJH6qg8U.m4a') }}"
+    );
+
+    var closeBTN = () => {
+      document.querySelector(".section").classList.remove("active");
+    };
+
+    const SECONDS = parseInt("{{2700 if subject == 'maths' else 900}}");
+    var seconds = SECONDS;
+
+    function startTimer(callback) {
+      const intervalId = setInterval(callback, 1000);
+
+      setTimeout(function () {
+        clearInterval(intervalId);
+        console.log("Timer expired");
+        timeupSound.play();
+        section.classList.add("active");
+      }, SECONDS * 1000);
+    }
+
+    function secondsToTimeFormat(seconds) {
+      const date = new Date(0);
+      date.setSeconds(seconds);
+
+      const formattedTime = date.toISOString().substr(14, 5);
+
+      return formattedTime;
+    }
+
+    startTimer(function () {
+      seconds = seconds - 1;
+      timer.style.width = `${(100 / SECONDS) * seconds}%`;
+
+      if (seconds < 60) {
+        timer.style.background = "#FF6868";
+      }
+
+      clockElement.innerHTML = secondsToTimeFormat(seconds);
+    });
+
+    const section = document.querySelector("section"),
+      //   overlay = document.querySelector(".overlay"),
+      //   showBtn = document.querySelector(".show-modal"),
+      closeBtn = document.querySelector(".close-btn");
+
+    // showBtn.addEventListener("click", () => section.classList.add("active"));
+
+    // overlay.addEventListener("click", () => section.classList.remove("active"));
+
+    closeBtn.addEventListener("click", () => {
+      section.classList.remove("active");
+      window.location.href = "/entrance";
+    });
+  </script>
+</body>
+
+{% endblock %}

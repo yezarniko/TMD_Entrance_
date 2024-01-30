@@ -1,0 +1,148 @@
+@font-face {
+  font-family: "KIN668";
+  src: url(font/KIN668.TTF);
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+     
+  
+  
+  
+  background-size: cover;
+  background-position: center;
+}
+
+.backgroundimg{
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+  filter: blur(1px);
+}
+
+.backgroundimg > img{
+  position: relative;
+  margin-inline: auto;
+  
+}
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75))
+}
+
+.advertisement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.image-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+  font-size: 28px;
+  margin-top: 0;
+  font-family: 'KIN668.TTF','Gill Sans', 'Gill Sans MT','Calibri', 'Trebuchet MS', sans-serif;
+  
+}
+
+h1:nth-child(2){
+  margin-bottom: 2em;
+}
+
+h2{
+  color: #136bef;
+}
+
+p {
+  color: #fbf6f6;
+  font-size: 16px;
+}
+
+.cta-button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #2bbef8;
+  background: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+span {
+  background: #2bbef8;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+  background: transparent;
+}
+
+button:hover span {
+  border: none;
+}
+
+.container {
+  text-align: center;
+  
+  width: 40%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.container h1 {
+  color: #136bef;
+}
+
+.container h3{
+  color: #136bef;
+}

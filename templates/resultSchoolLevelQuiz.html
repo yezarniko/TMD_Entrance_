@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}Result Page{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}" />
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+  <h1>Results</h1>
+  <br /><br />
+  <div class="questions__container">
+    <div class="subject">
+      Answers
+      <div class="down__icon" id="answers">
+        <img src="{{ url_for('static', filename='img/down-button.png') }}" />
+      </div>
+    </div>
+    <section id="answers" class="">
+      <!--  -->
+      {% for number, question in questions %}
+      <!--  -->
+      <div
+        style="color: {{'red' if answers[question['no']|string] == '' else 'black'}}"
+      >
+        {{number+1}}. {{question["question"]}} {{'no answer' if
+        answers[question['no']|string] == '' else ''}}
+      </div>
+      <div
+        style="
+          width: 60%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+        "
+      >
+        <ul class="choices">
+          <!--  -->
+          {% for num, choice in question["choices"].items() %}
+          <!--  -->
+          {% if num == answers[question['no']|string]%}
+          <!--  -->
+          {% if answers[question['no']|string] == question["correct_answer"] %}
+          <li style="color: green">{{num}}) {{choice}}</li>
+          <!--  -->
+          {% else %}
+          <li style="color: red">{{num}}) {{choice}}</li>
+
+          <!--  -->
+          {% endif %}
+          <!--  -->
+          {% else %}
+          <li>{{num}}) {{choice}}</li>
+          <!--  -->
+          {% endif %}
+          <!--  -->
+          {% endfor %}
+          <!--  -->
+        </ul>
+        <div>correct_answer: {{ question['correct_answer'] }}</div>
+      </div>
+      <br />
+
+      <!--  -->
+      {% endfor %}
+    </section>
+
+    <!--  -->
+  </div>
+  <div>Marks: {{numberOfCorrectAnswers}}</div>
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    "
+  >
+    <canvas id="progressCircle" width="300" height="300"></canvas>
+  </div>
+
+  <!-- <a href="/grade10test">Back</a> -->
+</body>
+<script>
+  var answersButton = document.querySelector("div#answers img");
+  var answersSection = document.querySelector("section#answers");
+
+  answersButton.addEventListener("click", function () {
+    if (answersSection.classList.contains("active")) {
+      answersSection.classList.remove("active");
+      answersButton.style.transform = "rotate(360deg)";
+    } else {
+      answersSection.classList.add("active");
+      answersButton.style.transform = "rotate(180deg)";
+    }
+  });
+
+  function drawProgressCircle(progress, id, subject) {
+    const canvas = document.getElementById(id);
+    const ctx = canvas.getContext("2d");
+
+    var grade = "";
+
+    if (progress <= 0.4) {
+      grade = "Good Job";
+    } else if (0.8 <= progress < 0.4) {
+      grade = "Awesome";
+    } else if (progress >= 0.8) {
+      grade = "Brilliant";
+    }
+
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the background circle
+    ctx.beginPath();
+    ctx.arc(
+      canvas.width / 2,
+      canvas.height / 2,
+      canvas.width / 2 - 10,
+      0,
+      2 * Math.PI
+    );
+    ctx.strokeStyle = "#ddd";
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    // Draw the progress arc
+    ctx.beginPath();
+    ctx.arc(
+      canvas.width / 2,
+      canvas.height / 2,
+      canvas.width / 2 - 10,
+      -0.5 * Math.PI,
+      (2 * progress - 0.5) * Math.PI
+    );
+    ctx.strokeStyle = "#4CAF50"; // Green color for the progress
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    // Display the percentage in the center
+    ctx.font = "20px Arial";
+    ctx.fillStyle = "#333";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    ctx.fillText(
+      Math.round(progress * 100) + "%" + "  " + grade,
+      canvas.width / 2,
+      canvas.height / 2
+    );
+  }
+
+  // Example usage: Update the progress circle with a value between 0 and 1
+  const progressValue = 0.7; // Example: 70% progress
+  drawProgressCircle(
+    parseInt("{{numberOfCorrectAnswers}}") / 15,
+    "progressCircle"
+  );
+</script>
+{% endblock %}

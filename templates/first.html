@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}TMD Entrance Page write here for title{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='first.css') }}" />
+
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+
+  <div class="backgroundimg">
+    <img src="{{ url_for('static', filename='img/fixedschoolimg.jpg') }}" alt="">
+  </div>
+  <div class="banner">
+    <div class="advertisement">
+      <div class="image-container">
+        <img
+          src="{{ url_for('static', filename='img/sample_pic.jpg') }}"
+          alt="School Entrance"
+        />
+      </div>
+      <div class="container">
+        <h1>Welcome to Our School's Entrance and Quiz!</h1>
+        <p></p>
+        <a href="/entrance">
+          <button class="cta-button"><span></span>Enter</button>
+        </a>
+        <h1>Making mistake is okay,it's how we learn</h1>
+        <p></p>
+        <h2>Our Aim</h2>
+        <p>is to be able to provide you with enjoyable and elated moments <br></p>
+      </div>
+
+     
+      
+    </div>
+
+    
+  </div>
+
+</body>
+{% endblock %}

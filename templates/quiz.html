@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}Quiz Test{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='quiz.css') }}" />
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+    <header>
+        <h1>Quiz Webpage</h1>
+    </header>
+
+    <div class="image-container">
+        <div class="image">
+          <img
+            src="{{ url_for('static', filename='img/2498667.png') }}"
+            alt="Image 1"
+          />
+          <div class="overlay">
+            <a href="/primaryschoolstudentquiz">
+              <button class="hover-button">click</button>
+            </a>
+            <p class="overlay-text">For age between  <br> Try your best and Good Luck buddy!</p>
+          </div>
+        </div>
+    
+        <div class="image">
+          <img
+            src="{{ url_for('static', filename='img/2498667.png') }}"
+            alt="Image 2"
+          />
+          <div class="overlay">
+            <a href="/middleschoolstudentquiz">
+              <button class="hover-button">click</button>
+            </a>
+            <p class="overlay-text">For age between <br> Try your best and Good Luck buddy!</p>
+          </div>
+        </div>
+    
+        <div class="image">
+          <img
+            src="{{ url_for('static', filename='img/2498667.png') }}"
+            alt="Image 3"
+          />
+          <div class="overlay">
+            <a href="/highschoolstudentquiz">
+              <button class="hover-button">click</button>
+            </a>
+            <p class="overlay-text">For age between <br> Try your best and Good Luck buddy!</p>
+          </div>
+        </div>
+      </div>
+
+</body>
+{% endblock %}

@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+<!-- title -->
+{% block title %}Result Page{% endblock %}
+<!--  -->
+
+<!-- style  -->
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='result.css') }}" />
+{% endblock %}
+<!--  -->
+
+<!--  -->
+{% block content %}
+<!-- start code here -->
+<body>
+  <h1>Results</h1>
+  <br /><br />
+  {% for subject, questions in solutions.items() %}
+  <!--  -->
+  <div class="questions__container">
+    <div class="subject">
+      {{subject}}
+      <div class="down__icon" id="{{subject}}">
+        <img src="{{ url_for('static', filename='img/down-button.png') }}" />
+      </div>
+    </div>
+    <section id="{{subject}}">
+      <!--  -->
+      {% for question in questions %}
+      <!--  -->
+      {% if student_answers[grade][subject][question['no']|string] == "" %}
+      <!--  -->
+      <div style="color: red">
+        {{question['no']}} {{question["question"]}} no answer
+      </div>
+      <!--  -->
+      {% else %}
+      <!--  -->
+      <div>{{question['no']}} {{question["question"]}}</div>
+      <!--  -->
+      {% endif %}
+      <div
+        style="
+          width: 60%;
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+        "
+      >
+        <ul class="choices">
+          {% for number, choice in question["choices"].items() %}
+          <!--  -->
+          {% if student_answers[grade][subject][question['no']|string] == number
+          %}
+          <!--  -->
+          {% if student_answers[grade][subject][question['no']|string] ==
+          question['correct_answer'] %}
+          <!--  -->
+          <li style="color: green">
+            {{number if subject != "myanmar" else numbering_map[number]}})
+            {{choice}}
+          </li>
+          <!--  -->
+          {% else %}
+          <!--  -->
+          <li style="color: red">
+            {{number if subject != "myanmar" else numbering_map[number]}})
+            {{choice}}
+          </li>
+          <!--  -->
+          {% endif %}
+          <!--  -->
+          {% else %}
+          <li>
+            {{number if subject != "myanmar" else numbering_map[number]}})
+            {{choice}}
+          </li>
+          <!--  -->
+          {% endif %}
+          <!--  -->
+          {% endfor %}
+        </ul>
+        <div>
+          correct_answer: {{ question['correct_answer'] if subject != "myanmar"
+          else numbering_map[question['correct_answer']]}}
+        </div>
+      </div>
+      <br />
+      <!--  -->
+      {% endfor %}
+    </section>
+    <!--  -->
+  </div>
+  {% endfor %}
+  <div>Myanmar: {{numberOfCorrectAnswers["myanmar"]}} marks</div>
+  <br />
+  <div>English: {{numberOfCorrectAnswers["english"]}} marks</div>
+  <br />
+  <div>Maths: {{numberOfCorrectAnswers["maths"]}} marks</div>
+  <br />
+
+  <div
+    style="
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    "
+  >
+    <canvas id="progressCircle1" width="300" height="300"></canvas>
+    <canvas id="progressCircle2" width="300" height="300"></canvas>
+    <canvas id="progressCircle3" width="300" height="300"></canvas>
+  </div>
+  <!-- <a href="/grade10test">Back</a> -->
+  <script>
+    var myanmarButton = document.querySelector("div#myanmar img");
+    var myanmarSection = document.querySelector("section#myanmar");
+
+    var englishButton = document.querySelector("div#english img");
+    var englishSection = document.querySelector("section#english");
+
+    var mathsButton = document.querySelector("div#maths img");
+    var mathsSection = document.querySelector("section#maths");
+
+    myanmarButton.addEventListener("click", function () {
+      if (myanmarSection.classList.contains("active")) {
+        myanmarSection.classList.remove("active");
+        myanmarButton.style.transform = "rotate(360deg)";
+      } else {
+        myanmarSection.classList.add("active");
+        myanmarButton.style.transform = "rotate(180deg)";
+      }
+    });
+
+    englishButton.addEventListener("click", function () {
+      if (englishSection.classList.contains("active")) {
+        englishSection.classList.remove("active");
+        englishButton.style.transform = "rotate(360deg)";
+      } else {
+        englishSection.classList.add("active");
+        englishButton.style.transform = "rotate(180deg)";
+      }
+    });
+
+    mathsButton.addEventListener("click", function () {
+      if (mathsSection.classList.contains("active")) {
+        mathsSection.classList.remove("active");
+        mathsButton.style.transform = "rotate(360deg)";
+      } else {
+        mathsSection.classList.add("active");
+        mathsButton.style.transform = "rotate(180deg)";
+      }
+    });
+    // Function to draw the progress circle
+    function drawProgressCircle(progress, id, subject) {
+      const canvas = document.getElementById(id);
+      const ctx = canvas.getContext("2d");
+
+      var grade = "";
+
+      if (progress <= 0.4) {
+        grade = "Good Job";
+      } else if (0.8 <= progress < 0.4) {
+        grade = "Awesome";
+      } else if (progress > 0.8) {
+        grade = "Brilliant";
+      }
+
+      // Clear the canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      // Draw the background circle
+      ctx.beginPath();
+      ctx.arc(
+        canvas.width / 2,
+        canvas.height / 2,
+        canvas.width / 2 - 10,
+        0,
+        2 * Math.PI
+      );
+      ctx.strokeStyle = "#ddd";
+      ctx.lineWidth = 15;
+      ctx.stroke();
+
+      // Draw the progress arc
+      ctx.beginPath();
+      ctx.arc(
+        canvas.width / 2,
+        canvas.height / 2,
+        canvas.width / 2 - 10,
+        -0.5 * Math.PI,
+        (2 * progress - 0.5) * Math.PI
+      );
+      ctx.strokeStyle = "#4CAF50"; // Green color for the progress
+      ctx.lineWidth = 15;
+      ctx.stroke();
+
+      // Display the percentage in the center
+      ctx.font = "20px Arial";
+      ctx.fillStyle = "#333";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.fillText(
+        subject + " " + Math.round(progress * 100) + "%" + "  " + grade,
+        canvas.width / 2,
+        canvas.height / 2
+      );
+    }
+
+    // Example usage: Update the progress circle with a value between 0 and 1
+    const progressValue = 0.7; // Example: 70% progress
+    drawProgressCircle(
+      parseInt("{{numberOfCorrectAnswers['myanmar']}}") / 30,
+      "progressCircle1",
+      "Myanmar"
+    );
+    drawProgressCircle(
+      parseInt("{{numberOfCorrectAnswers['english']}}") / 30,
+      "progressCircle2",
+      "English"
+    );
+    drawProgressCircle(
+      parseInt("{{numberOfCorrectAnswers['maths']}}") / 30,
+      "progressCircle3",
+      "Maths"
+    );
+  </script>
+</body>
+{% endblock %}

@@ -1,0 +1,346 @@
+[
+    {
+      "no": 1,
+      "question": "We will go back _______ the evening ",
+      "choices": {
+        "a": "on",
+        "b": "at",
+        "c": "in"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+      },
+      {
+        "no": 2,
+        "question": "What is the meaning of languish?",
+        "choices": {
+          "a": "To thrive",
+          "b": "To celebrate",
+          "c": "To wither or fade away"
+        },
+        "correct_answer": "b",
+        "subject" : "English"
+      },
+      {
+        "no": 3,
+        "question": "Define ephemeral?",
+        "choices": {
+          "a": "Permanent",
+          "b": "Resilient",
+          "c": "Lasting for a very short time"
+        },
+        "correct_answer": "c" ,
+        "subject" : "English"
+      },
+      {
+        "no": 4,
+        "question": "Choose the synonym for 'ubiquitous",
+        "choices": {
+          "a": "Pervasive",
+          "b": "Elusive",
+          "c": "Scarce"
+        },
+        "correct_answer": "a",
+        "subject" : "English"
+  
+      },
+      {
+        "no": 5,
+        "question": " Mohan has made ____ progress in his studies",
+        "choices": {
+          "a": "up to date",
+          "b": "excessive",
+          "c": "rapid"
+        },
+        "correct_answer": "c",
+        "subject" : "English"
+      },
+      {
+        "no": 6,
+        "question": " The poor beggar is ______ dressed",
+        "choices": {
+          "a": "well",
+          "b": "gaily",
+          "c": "shabbily"
+        },
+        "correct_answer": "c",
+        "subject" : "English"
+      },
+      {
+        "no": 7,
+        "question": "Jurong is one of the largest industrial _______in Singapore",
+        "choices": {
+          "a": "towns",
+          "b": "estates",
+          "c": "cities"
+        },
+        "correct_answer": "b",
+        "subject" : "English"
+      },
+      {
+        "no": 8,
+        "question": "What is the opposite of modern",
+        "choices": {
+          "a": "new",
+          "b": "fine",
+          "c": "ancient"
+        },
+        "correct_answer": "c" ,
+        "subject" : "English"
+      },
+      {
+        "no": 9,
+        "question": " opposite of 'superior to' ",
+        "choices": {
+          "a": "inferior to",
+          "b": "better than ",
+          "c": "pooer than"
+        },
+        "correct_answer": "a",
+        "subject" : "English" 
+      },
+      {
+        "no": 10,
+        "question": "opposite of barren",
+        "choices": {
+          "a": " rocky",
+          "b": " fertile",
+          "c": "sandy"
+        },
+        "correct_answer": "b",
+        "subject" : "English"
+      },
+      {
+        "no": 11,
+        "question": "opposite of grasped",
+        "choices": {
+          "a": "united",
+          "b": "released",
+          "c": "seized"
+        },
+        "correct_answer": "b",
+        "subject" : "English"
+       },
+       
+
+    {
+      "no": 12,
+      "question": "I could finally relex because I ______ all my exams",
+      "choices": {
+        "a": "pass",
+        "b": "would have passed",
+        "c": "had passed"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 13,
+      "question": "The same meaning of 'Gathered' ",
+      "choices": {
+        "a": "arrested",
+        "b": "assembled",
+        "c": "captured"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 14,
+      "question": " 2 weeks' is also called " ,
+      "choices": {
+        "a": "eternity",
+        "b": "thirnight",
+        "c": "fortnight"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 15,
+      "question": "The police______him for catching the robber",
+      "choices": {
+        "a": "promoted",
+        "b": "praised",
+        "c": "blamed"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 16,
+      "question": "Same meaning of 'out of order' ",
+      "choices": {
+        "a": "not serving",
+        "b": "not well",
+        "c": "not functioning"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 17,
+      "question": "I have lived in this city ____2010",
+      "choices": {
+        "a": "since",
+        "b": "for",
+        "c": "in"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 18,
+      "question": "She is known for his_____ in solving",
+      "choices": {
+        "a": "adeptness",
+        "b": "adaptability",
+        "c": "skill"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 19,
+      "question": "Select the antonym for 'vivid",
+      "choices": {
+        "a": "dull",
+        "b": "bright",
+        "c": "light"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 20,
+      "question": "Neither me nor my sister ___ coffee",
+      "choices": {
+        "a": "like",
+        "b": "likes",
+        "c": "liked"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 21,
+      "question": "What is the opposite of reckless",
+      "choices": {
+        "a": "wild",
+        "b": "hasty",
+        "c": "discreet"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 22,
+      "question": "same meaning of wreckage ",
+      "choices": {
+        "a": "aid",
+        "b": "destroy",
+        "c": "build"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 23,
+      "question": "same meaing of 'Empathize' ",
+      "choices": {
+        "a": "understand",
+        "b": "dismiss",
+        "c": "mistake"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 24,
+      "question": "Neither of the students ______aware of the upcoming test",
+      "choices": {
+        "a": "are",
+        "b": "is",
+        "c": "were"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 25,
+      "question": "The group of friends _______ excited about the upcoming trip",
+      "choices": {
+        "a": "was",
+        "b": "is",
+        "c": "were"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 25,
+      "question": "Speaking is a_____ skill",
+      "choices": {
+        "a": "Receptive",
+        "b": "Productive",
+        "c": "Received"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 26,
+      "question": "Sunya means",
+      "choices": {
+        "a": "Empty",
+        "b": "Full",
+        "c": "Less"
+      },
+      "correct_answer": "a",
+      "subject" : "English"    
+    },
+    {
+      "no": 27,
+      "question": "Language is a ____for communication ",
+      "choices": {
+        "a": "subject",
+        "b": "skill",
+        "c": "tool"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 28,
+      "question ":"We all have to pass_____ at the airport",
+      "choices": {
+        "a": "immigration",
+        "b": "password",
+        "c": "luggage"
+      },
+      "correct_answer": "a",
+      "subject" : "English" 
+    },
+    {
+      "no": 29,
+      "question": "Bacteria are _________",
+      "choices": {
+        "a": "decomposers",
+        "b": "scavengers",
+        "c": "animal"
+      },
+      "correct_answer": "a",
+      "subject" : "English" 
+    },
+    {
+      "no": 30,
+      "question": "Can you give me ______",
+      "choices": {
+        "a": "arrival",
+        "b": "approval",
+        "c": "promotion"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    }
+]

@@ -1,0 +1,505 @@
+
+[
+    {
+      "no": 1,
+      "question": "Who is the first president of united states?",
+      "choices": {
+        "a": "Thomas Jefferson",
+        "b": "John Adams",
+        "c": "George Washington"
+      },
+      "correct_answer": "c",
+      "subject" : "Generalquizeng"
+    },
+    {
+        "no": 2,
+        "question": "What is the smallest continent in size?",
+        "choices": {
+          "a": "Antarctica",
+          "b": "Europe",
+          "c": "Australia"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 3,
+        "question": "What is the capital city of Brazil",
+        "choices": {
+          "a": "Brazila",
+          "b": "Brasili",
+          "c": "Brasilia"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 4,
+        "question": "What is the hardest rock?",
+        "choices": {
+          "a": "Granite",
+          "b": "Marble",
+          "c": "Diamond"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 5,
+        "question": "What part of the body does not feel pain?",
+        "choices": {
+          "a": "heart",
+          "b": "lung",
+          "c": "brain"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 6,
+        "question": "Which animal can't blink?",
+        "choices": {
+          "a": "hedgehog",
+          "b": "rat",
+          "c": "fish"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 7,
+        "question": "What is the largest organ in the human body?",
+        "choices": {
+          "a": "tongue",
+          "b": "skin",
+          "c": "small intestine"
+        },
+        "correct_answer": "b",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 8,
+        "question": "What is the smallest country in the world",
+        "choices": {
+          "a": "Australia",
+          "b": "Canada",
+          "c": "Vatican City"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 9,
+        "question": "What is the largest species of shark?",
+        "choices": {
+          "a": "blue shark ",
+          "b": "whale shark",
+          "c": "grey shark"
+        },
+        "correct_answer": "b",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 10,
+        "question": "What is the heaviest organ in the human body?",
+        "choices": {
+          "a": "Liver",
+          "b": "Brain",
+          "c": "Heart"
+        },
+        "correct_answer": "a",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 11,
+        "question": "What animal cannot sleep?",
+        "choices": {
+          "a": "shark",
+          "b": "snake",
+          "c": "bullfrog"
+        },
+        "correct_answer": "c",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 12,
+        "question": "In which year did the Titanic sink?",
+        "choices": {
+          "a": "1920",
+          "b": "1912",
+          "c": "1925"
+        },
+        "correct_answer": "b",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 13,
+        "question": "How many days can the body go without water?",
+        "choices": {
+          "a": "1",
+          "b": "3",
+          "c": "4"
+        },
+        "correct_answer": "b",
+        "subject" : "Generalquizeng"
+    },
+    {
+        "no": 14,
+        "question": "Which planet is known as the Red Planet?",
+        "choices": {
+          "a": "Jupiter",
+          "b": "Mars",
+          "c": "Saturn"
+        },
+        "correct_answer": "b",
+        "subject" : "Generalquizeng"
+      },
+      {
+          "no": 15,
+          "question": "Which animal is the tallest in the world?",
+          "choices": {
+            "a": "Elephant",
+            "b": "Ostrich",
+            "c": "Giraffe"
+          },
+          "correct_answer": "c",
+          "subject" : "Generalquizeng"
+        },
+        {
+            "no": 16,
+
+"question": "What is the strong sense in humans?",
+            "choices": {
+              "a": "sight",
+              "b": "hearing",
+              "c": "smell"
+            },
+            "correct_answer": "a",
+            "subject" : "Generalquizeng"
+          },
+          {
+              "no": 17,
+              "question": "In what year was Apple founded?",
+              "choices": {
+                "a": "1976",
+                "b": "1986",
+                "c": "1996"
+              },
+              "correct_answer": "a",
+              "subject" : "Generalquizeng"
+            },
+            {
+                "no": 18,
+                "question": "What is the largest country in the world?",
+                "choices": {
+                  "a": "China",
+                  "b": "Russia",
+                  "c": "Canada"
+                },
+                "correct_answer": "b",
+                "subject" : "Generalquizeng"
+              },
+              {
+                  "no": 19,
+                  "question": "Which part of the body doesn't change in size from birth?",
+                  "choices": {
+                    "a": "Toe",
+                    "b": "Eyes",
+                    "c": "Lung"
+                  },
+                  "correct_answer": "b",
+                  "subject" : "Generalquizeng"
+                },
+                {
+                    "no": 20,
+                    "question": "What is the tallest mountain in the world?",
+                    "choices": {
+                      "a": "K2",
+                      "b": "Mount Everest",
+                      "c": "Mount Mckinley"
+                    },
+                    "correct_answer": "b",
+                    "subject" : "Generalquizeng"
+                  },
+                  {
+                      "no": 21,
+                      "question": "How many continents does Earth have?",
+                      "choices": {
+                        "a": "5",
+                        "b": "6",
+                        "c": "7"
+                      },
+                      "correct_answer": "c",
+                      "subject" : "Generalquizeng"
+                    },
+                    {
+                        "no": 22,
+                        "question": "Which river is the longest in the world?",
+                        "choices": {
+                          "a": "Nile",
+                          "b": "Amazon",
+                          "c": "Mississippi"
+                        },
+                        "correct_answer": "a",
+                        "subject" : "Generalquizeng"
+                      },
+                      {
+                          "no": 23,
+                          "question": "What is the capital city of Australia",
+                          "choices": {
+                            "a": "Sydney",
+                            "b": "Melbourne",
+                            "c": "Canberra"
+                          },
+                          "correct_answer": "c",
+                          "subject" : "Generalquizeng"
+                        },
+                        {
+                            "no": 24,
+                            "question": "Which animal is known as man's best friend?",
+                            "choices": {
+                              "a": "cat",
+                              "b": "dog",
+                              "c": "horse"
+                            },
+                            "correct_answer": "b",
+                            "subject" : "Generalquizeng"
+                          },
+                          {
+                              "no": 25,
+                              "question": "What is the world's most populated city?",
+                              "choices": {
+                                "a": "Delhi",
+                                "b": "Tokyo",
+                                "c": "Shanghai"
+                              },
+                              "correct_answer": "b",
+                              "subject" : "Generalquizeng"
+                            },
+
+
+{
+                                "no": 26,
+                                "question": "Which country invented tea?",
+                                "choices": {
+                                  "a": "China",
+                                  "b": "Japan",
+                                  "c": "Korea"
+                                },
+                                "correct_answer": "a",
+                                "subject" : "Generalquizeng"
+                              },
+                              {
+                                  "no": 27,
+                                  "question": "Which country has the most time zones?",
+                                  "choices": {
+                                    "a": "France",
+                                    "b": "Delhi",
+                                    "c": "Australia"
+                                  },
+                                  "correct_answer": "a",
+                                  "subject" : "Generalquizeng"
+                                },
+                                {
+                                    "no": 28,
+                                    "question": "What is the rarest blood type",
+                                    "choices": {
+                                      "a": "AB+",
+                                      "b": "B+",
+                                      "c": "AB-"
+                                    },
+                                    "correct_answer": "c",
+                                    "subject" : "Generalquizeng"
+                                  },
+                                  {
+                                      "no": 29,
+                                      "question": "What is the most common hair colour",
+                                      "choices": {
+                                        "a": "Black",
+                                        "b": "Blond",
+                                        "c": "Gray"
+                                      },
+                                      "correct_answer": "a",
+                                      "subject" : "Generalquizeng"
+                                    },
+                                    {
+                                        "no": 30,
+                                        "question": "Which disease can make people die most?",
+                                        "choices": {
+                                          "a": "Covid-19",
+                                          "b": "Cancer",
+                                          "c": "Heart Disease"
+                                        },
+                                        "correct_answer": "c",
+                                        "subject" : "Generalquizeng"
+                                      },
+                                      {
+                                          "no": 31,
+                                          "question": "Who is the oldest person in the world?",
+                                          "choices": {
+                                            "a": "Tomiko Itooka",
+                                            "b": "Maria Branyas",
+                                            "c": "Inah Canabarro Lucas"
+                                          },
+                                          "correct_answer": "b",
+                                          "subject" : "Generalquizeng"
+                                        },
+                                        {
+                                            "no": 32,
+                                            "question": "How many elements in periodic table",
+                                            "choices": {
+                                              "a": "108",
+                                              "b": "188",
+                                              "c": "118"
+                                            },
+                                            "correct_answer": "c",
+
+"subject" : "Generalquizeng"
+                                          },
+                                          {
+                                              "no": 33,
+                                              "question": "How do we call e=mc^2 today?",
+                                              "choices": {
+                                                "a": "Special theory of relativity",
+                                                "b": "Special theory of energy",
+                                                "c": "Special theory of general relativity"
+                                              },
+                                              "correct_answer": "a",
+                                              "subject" : "Generalquizeng"
+                                            },
+                                            {
+                                                "no": 34,
+                                                "question": "Among these planets which planet doesn't have solid",
+                                                "choices": {
+                                                  "a": "Uranus",
+                                                  "b": "Venus",
+                                                  "c": "Jupiter"
+                                                },
+                                                "correct_answer": "c",
+                                                "subject" : "Generalquizeng"
+                                              },
+                                              {
+                                                  "no": 35,
+                                                  "question": "What is the second smallest planet in our solar system?",
+                                                  "choices": {
+                                                    "a": "Mars",
+                                                    "b": "Jupiter",
+                                                    "c": "Mercury"
+                                                  },
+                                                  "correct_answer": "a",
+                                                  "subject" : "Generalquizeng"
+                                                },
+                                                {
+                                                    "no": 36,
+                                                    "question": "Which mountain range is the longest in the world?",
+                                                    "choices": {
+                                                      "a": "Mount everest ",
+                                                      "b": "Andes Mountais",
+                                                      "c": "K2"
+                                                    },
+                                                    "correct_answer": "b",
+                                                    "subject" : "Generalquizeng"
+                                                  },
+                                                  {
+                                                      "no": 37,
+                                                      "question": "In which city would you find the colosseum?",
+                                                      "choices": {
+                                                        "a": "Paris",
+                                                        "b": "Rome",
+                                                        "c": "Berlin"
+                                                      },
+                                                      "correct_answer": "b",
+                                                      "subject" : "Generalquizeng"
+                                                    },
+                                                    {
+                                                        "no": 38,
+
+"question": "How many letters are there in the english alphabet?",
+                                                        "choices": {
+                                                          "a": "24",
+                                                          "b": "25",
+                                                          "c": "26"
+                                                        },
+                                                        "correct_answer": "c",
+                                                        "subject" : "Generalquizeng"
+                                                      },
+                                                      {
+                                                          "no": 39,
+                                                          "question": "Who is father of modern physics",
+                                                          "choices": {
+                                                            "a": "Albert Einstein",
+                                                            "b": "Obbenheimei",
+                                                            "c": "Isaac Newton"
+                                                          },
+                                                          "correct_answer": "a",
+                                                          "subject" : "Generalquizeng"
+                                                        },
+                                                        {
+                                                            "no": 40,
+                                                            "question":"There is a ______island in japan",
+                                                            "choices": {
+                                                              "a": "cat",
+                                                              "b": "rabbit",
+                                                              "c": "snake"
+                                                            },
+                                                            "correct_answer": "b",
+                                                            "subject" : "Generalquizeng"
+                                                          },
+                                                          {
+                                                              "no": 41,
+                                                              "question": "Icecream was discovered in ______4000 years ago_",
+                                                              "choices": {
+                                                                "a": "China",
+                                                                "b": "Korea",
+                                                                "c": "Japan"
+                                                              },
+                                                              "correct_answer": "a",
+                                                              "subject" : "Generalquizeng"
+                                                            },
+                                                            {
+                                                                "no": 42,
+                                                                "question": "How many ethnic groups in myanmar?",
+                                                                "choices": {
+                                                                  "a": "153",
+                                                                  "b": "135",
+                                                                  "c": "115"
+                                                                },
+                                                                "correct_answer": "b",
+                                                                "subject" : "Generalquizeng"
+                                                              },
+
+
+{
+                                                                  "no": 43,
+                                                                  "question": "Where is the Statue of Liberty situated? ",
+                                                                  "choices": {
+                                                                    "a": "California",
+                                                                    "b": "Newyork",
+                                                                    "c": "Georgia"
+                                                                  },
+                                                                  "correct_answer": "b",
+                                                                  "subject" : "Generalquizeng"
+                                                                },
+                                                                {
+                                                                    "no": 44,
+                                                                    "question": "Country that has the most weirdest flag? ",
+                                                                    "choices": {
+                                                                      "a": "Spain",
+                                                                      "b": "Nepal",
+                                                                      "c": "Greenland"
+                                                                    },
+                                                                    "correct_answer": "b",
+                                                                    "subject" : "Generalquizeng"
+                                                                  },
+                                                                  {
+                                                                      "no": 45,
+                                                                      "question": "How many flags in the whole world?",
+                                                                      "choices": {
+                                                                        "a": "319",
+                                                                        "b": "129",
+                                                                        "c": "193"
+                                                                      },
+                                                                      "correct_answer": "c",
+                                                                      "subject" : "Generalquizeng"
+                                                                    }
+                                                                ]

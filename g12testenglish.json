@@ -1,0 +1,335 @@
+[
+    {
+      "no": 1,
+      "question": "I can't help __________ about you",
+      "choices": {
+        "a": "think",
+        "b": "thought",
+        "c": "thinking"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 2,
+      "question": "She works very hard,but she ____ goes to the gym every day",
+      "choices": {
+        "a": "often",
+        "b": "also",
+        "c": "always"
+      },
+      "correct_answer": "b",
+      "subject" : "English"   
+    },
+    {
+      "no": 3,
+      "question": "Our oackage tour will-----all of the top tourist sites in Myanmar.",
+      "choices": {
+        "a": "encompass",
+        "b": "enable",
+        "c": "give away"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 4,
+      "question": "Vietnam is long and ________",
+      "choices": {
+        "a": "narrow",
+        "b": "broad",
+        "c": "fair"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 5,
+      "question": "No matter how gorgeous was your dream,it_____dreamed again",
+      "choices": {
+        "a": "would not be ",
+        "b": "will not be",
+        "c": "would have been"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 6,
+      "question": "I have sold my bike because I ____ a car ",
+      "choices": {
+        "a": "am going to buy",
+        "b": "would buy",
+        "c": "will buy"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 7,
+      "question": "The news may be unexpected;_____,it is true",
+      "choices": {
+        "a": "nevertheless",
+        "b": "but",
+        "c": "and"
+      },
+      "correct_answer": "a",
+      "subject" : "English"  
+    },
+    {
+      "no": 8,
+      "question": "same meaning of 'numerous' ",
+      "choices": {
+        "a": "shiny",
+        "b": "many",
+        "c": "sparkle"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 9,
+      "question": "same meaning of ' tried",
+      "choices": {
+        "a": "arranged",
+        "b": "wanted",
+        "c": "attempted"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 10,
+      "question": "you will get better TV_____ if you live nearer to the transmission station",
+      "choices": {
+        "a": "view",
+        "b": "sight",
+        "c": "reception"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 11,
+      "question": "In Singapore, littering is strictly ______-",
+      "choices": {
+        "a": "restricted",
+        "b": "encouraged",
+        "c": "prohibited"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 12,
+      "question": "I must go to the library to_____ these books I  borrowed two weeks ago",
+      "choices": {
+        "a": "copy",
+        "b": "read",
+        "c": "replace"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 13,
+      "question": "Which word means 'graceful and attractive'",
+      "choices": {
+        "a": "gorgeous",
+        "b": "stunning",
+        "c": "elegant"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 14,
+      "question": "_____men used tools and weapons made from stones and bones.",
+      "choices": {
+        "a": "Primary",
+        "b": "Primitive",
+        "c": "Professional"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 15,
+      "question": "Which word is similar to'snake'",
+      "choices": {
+        "a": "sepphire",
+        "b": "shroud",
+        "c": "serpent"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 16,
+      "question": "Your game is too______for us to continue to play.",
+      "choices": {
+        "a": "boring",
+        "b": "interesting",
+        "c": "exciting"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 17,
+      "question": "The vegetables were fried without______",
+      "choices": {
+        "a": "washing",
+        "b": "being washed",
+        "c": "wash"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 18,
+      "question": "Ko Gyi ate his lunch greedily as though he______for days.",
+      "choices": {
+        "a": "ate",
+        "b": "did not eat",
+        "c": "hadn't eaten"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 19,
+      "question": "She does not ____progress.",
+      "choices": {
+        "a": "use",
+        "b": "make",
+        "c": "do"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 20,
+      "question": "He___good in his last exam.",
+      "choices": {
+        "a": "did",
+        "b": "made",
+        "c": "was"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 21,
+      "question": "Which word means'a situation in which there is a challenging problem to solve.",
+      "choices": {
+        "a": "hard",
+        "b": "conflict",
+        "c": "conplexion"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 22,
+      "question": "After a long tiring day,I took a warm bath to______myself.",
+      "choices": {
+        "a": "soothe",
+        "b": "meet",
+        "c": "chill"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 23,
+      "question": "We______a team-bulding meeting in our school by this time next Morining.",
+      "choices": {
+        "a": "will hold",
+        "b": "will be holding",
+        "c": "are holding"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 24,
+      "question": "Miserable home environment can_____the children's behaviour.",
+      "choices": {
+        "a": "do",
+        "b": "effect",
+        "c": "impact"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 25,
+      "question": "Many teenagers these days are very____of fashion trends.",
+      "choices": {
+        "a": "conscious",
+        "b": "compelled",
+        "c": "conscientious"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 26,
+      "question": "Which word means 'a quick look at something'?",
+      "choices": {
+        "a": "gaze",
+        "b": "glance",
+        "c": "google"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    },
+    {
+      "no": 27,
+      "question": "Sleep_____can lead to obesity.",
+      "choices": {
+        "a": "deprivation",
+        "b": "deprive",
+        "c": "deprived"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 28,
+      "question": "Ko Gyi improved his vocabulary____all sorts of book.",
+      "choices": {
+        "a": "through read",
+        "b": "reading",
+        "c": "by reading"
+      },
+      "correct_answer": "c",
+      "subject" : "English"
+    },
+    {
+      "no": 29,
+      "question": "The opposite of 'optimistic' is",
+      "choices": {
+        "a": "pessimistic",
+        "b": "optimal",
+        "c": "pivoted"
+      },
+      "correct_answer": "a",
+      "subject" : "English"
+    },
+    {
+      "no": 30,
+      "question": "He had been_____good at drawing when he was at school.",
+      "choices": {
+        "a": "almost",
+        "b": "fairly",
+        "c": "nearly"
+      },
+      "correct_answer": "b",
+      "subject" : "English"
+    }
+
+
+
+]
