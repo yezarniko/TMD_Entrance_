@@ -100,129 +100,168 @@
   <br />
 
   <div
-    style="
-      display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-    "
+    style="display: flex; justify-content: space-between; flex-direction: row"
   >
-    <canvas id="progressCircle1" width="300" height="300"></canvas>
-    <canvas id="progressCircle2" width="300" height="300"></canvas>
-    <canvas id="progressCircle3" width="300" height="300"></canvas>
+    <canvas id="progressCircle1" width="250" height="250"></canvas>
+    <canvas id="progressCircle2" width="250" height="250"></canvas>
+    <canvas id="progressCircle3" width="250" height="250"></canvas>
   </div>
+  <a id="submit-btn" href="/entrance/">Back</a>
   <!-- <a href="/grade10test">Back</a> -->
-  <script>
-    var myanmarButton = document.querySelector("div#myanmar img");
-    var myanmarSection = document.querySelector("section#myanmar");
+</body>
+<script>
+  var myanmarButton = document.querySelector("div#myanmar img");
+  var myanmarSection = document.querySelector("section#myanmar");
 
-    var englishButton = document.querySelector("div#english img");
-    var englishSection = document.querySelector("section#english");
+  var englishButton = document.querySelector("div#english img");
+  var englishSection = document.querySelector("section#english");
 
-    var mathsButton = document.querySelector("div#maths img");
-    var mathsSection = document.querySelector("section#maths");
+  var mathsButton = document.querySelector("div#maths img");
+  var mathsSection = document.querySelector("section#maths");
 
-    myanmarButton.addEventListener("click", function () {
-      if (myanmarSection.classList.contains("active")) {
-        myanmarSection.classList.remove("active");
-        myanmarButton.style.transform = "rotate(360deg)";
-      } else {
-        myanmarSection.classList.add("active");
-        myanmarButton.style.transform = "rotate(180deg)";
-      }
-    });
+  myanmarButton.addEventListener("click", function () {
+    if (myanmarSection.classList.contains("active")) {
+      myanmarSection.classList.remove("active");
+      myanmarButton.style.transform = "rotate(360deg)";
+    } else {
+      myanmarSection.classList.add("active");
+      myanmarButton.style.transform = "rotate(180deg)";
+    }
+  });
 
-    englishButton.addEventListener("click", function () {
-      if (englishSection.classList.contains("active")) {
-        englishSection.classList.remove("active");
-        englishButton.style.transform = "rotate(360deg)";
-      } else {
-        englishSection.classList.add("active");
-        englishButton.style.transform = "rotate(180deg)";
-      }
-    });
+  englishButton.addEventListener("click", function () {
+    if (englishSection.classList.contains("active")) {
+      englishSection.classList.remove("active");
+      englishButton.style.transform = "rotate(360deg)";
+    } else {
+      englishSection.classList.add("active");
+      englishButton.style.transform = "rotate(180deg)";
+    }
+  });
 
-    mathsButton.addEventListener("click", function () {
-      if (mathsSection.classList.contains("active")) {
-        mathsSection.classList.remove("active");
-        mathsButton.style.transform = "rotate(360deg)";
-      } else {
-        mathsSection.classList.add("active");
-        mathsButton.style.transform = "rotate(180deg)";
-      }
-    });
-    // Function to draw the progress circle
-    function drawProgressCircle(progress, id, subject) {
-      const canvas = document.getElementById(id);
-      const ctx = canvas.getContext("2d");
+  mathsButton.addEventListener("click", function () {
+    if (mathsSection.classList.contains("active")) {
+      mathsSection.classList.remove("active");
+      mathsButton.style.transform = "rotate(360deg)";
+    } else {
+      mathsSection.classList.add("active");
+      mathsButton.style.transform = "rotate(180deg)";
+    }
+  });
+  // Function to draw the progress circle
+  function drawProgressCircle(progress, id, subject) {
+    const canvas = document.getElementById(id);
+    const ctx = canvas.getContext("2d");
+    var color = "#FFFC9B";
 
-      var grade = "";
+    var grade = "";
 
-      if (progress <= 0.4) {
-        grade = "Good Job";
-      } else if (0.8 <= progress < 0.4) {
-        grade = "Awesome";
-      } else if (progress > 0.8) {
-        grade = "Brilliant";
-      }
-
-      // Clear the canvas
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-      // Draw the background circle
-      ctx.beginPath();
-      ctx.arc(
-        canvas.width / 2,
-        canvas.height / 2,
-        canvas.width / 2 - 10,
-        0,
-        2 * Math.PI
-      );
-      ctx.strokeStyle = "#ddd";
-      ctx.lineWidth = 15;
-      ctx.stroke();
-
-      // Draw the progress arc
-      ctx.beginPath();
-      ctx.arc(
-        canvas.width / 2,
-        canvas.height / 2,
-        canvas.width / 2 - 10,
-        -0.5 * Math.PI,
-        (2 * progress - 0.5) * Math.PI
-      );
-      ctx.strokeStyle = "#4CAF50"; // Green color for the progress
-      ctx.lineWidth = 15;
-      ctx.stroke();
-
-      // Display the percentage in the center
-      ctx.font = "20px Arial";
-      ctx.fillStyle = "#333";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "middle";
-      ctx.fillText(
-        subject + " " + Math.round(progress * 100) + "%" + "  " + grade,
-        canvas.width / 2,
-        canvas.height / 2
-      );
+    if (progress <= 0.4) {
+      grade = "Good Job";
+    } else if (0.8 <= progress < 0.4) {
+      grade = "Awesome";
+      color = "#96E9C6";
+    } else if (progress > 0.8) {
+      grade = "Brilliant";
+      color = "#864AF9";
     }
 
-    // Example usage: Update the progress circle with a value between 0 and 1
-    const progressValue = 0.7; // Example: 70% progress
-    drawProgressCircle(
-      parseInt("{{numberOfCorrectAnswers['myanmar']}}") / 30,
-      "progressCircle1",
-      "Myanmar"
+    // Clear the canvas
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    // Draw the background circle
+    ctx.beginPath();
+    ctx.arc(
+      canvas.width / 2,
+      canvas.height / 2,
+      canvas.width / 2 - 10,
+      0,
+      2 * Math.PI
     );
-    drawProgressCircle(
-      parseInt("{{numberOfCorrectAnswers['english']}}") / 30,
-      "progressCircle2",
-      "English"
+    ctx.strokeStyle = "#BFCFE711"; //"#ddd";
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    // Draw the progress arc
+    ctx.beginPath();
+    ctx.arc(
+      canvas.width / 2,
+      canvas.height / 2,
+      canvas.width / 2 - 10,
+      -0.5 * Math.PI,
+      (2 * progress - 0.5) * Math.PI
     );
-    drawProgressCircle(
-      parseInt("{{numberOfCorrectAnswers['maths']}}") / 30,
-      "progressCircle3",
-      "Maths"
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 15;
+    ctx.stroke();
+
+    // Display the percentage in the center
+    ctx.font = "18px Arial";
+    ctx.fillStyle = "#333";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+
+    ctx.fillText(
+      subject + " " + Math.round(progress * 100) + "%" + "  " + grade,
+      canvas.width / 2,
+      canvas.height / 2
     );
-  </script>
-</body>
+  }
+
+  // Example usage: Update the progress circle with a value between 0 and 1
+  const progressValue = 0.7; // Example: 70% progress
+
+  // Function to animate the progress
+  function animateProgress(start, end, duration, id, subject) {
+    const startTime = Date.now();
+
+    function update() {
+      const currentTime = Date.now();
+      const elapsedTime = currentTime - startTime;
+
+      // Calculate the progress based on elapsed time
+      const progress = Math.min(1, elapsedTime / duration);
+
+      // Interpolate between start and end values
+      const currentProgress = start + progress * (end - start);
+
+      // Draw the progress circle
+      drawProgressCircle(currentProgress, id, subject);
+
+      // Continue the animation if not complete
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    // Start the animation
+    requestAnimationFrame(update);
+  }
+
+  // Example usage: Animate from 0% to 70% over 2 seconds
+  animateProgress(
+    0,
+    parseInt("{{numberOfCorrectAnswers['myanmar']}}") / 30,
+    2000,
+    "progressCircle1",
+    "Myanmar"
+  );
+  animateProgress(
+    0,
+    parseInt("{{numberOfCorrectAnswers['english']}}") / 30,
+    2000,
+    "progressCircle2",
+    "English"
+  );
+  animateProgress(
+    0,
+    parseInt("{{numberOfCorrectAnswers['maths']}}") / 30,
+    2000,
+    "progressCircle3",
+    "Maths"
+  );
+
+  // animateProgress(0, 0.9, 2000, "progressCircle2", "English");
+  // animateProgress(0, 0.7, 2000, "progressCircle3", "Maths");
+</script>
 {% endblock %}

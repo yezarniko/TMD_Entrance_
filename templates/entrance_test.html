@@ -7,7 +7,7 @@
 {% block style %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='g10testmyanmar.css') }}"
+  href="{{ url_for('static', filename='entrance_test.css') }}"
 />
 
 {% endblock %}
@@ -18,6 +18,13 @@
 <!-- start code here -->
 <body>
   <header class="header">
+    <div>
+      <img
+        src="/static/img/tmdlogofixed.png"
+        alt="Logo Left"
+        class="logo-left"
+      />
+    </div>
     <div class="header__container">
       <h1>Grade {{grade}} ({{subject}})</h1>
       <h2 class="clock" style="position: absolute"></h2>

@@ -14,15 +14,17 @@
 {% block content %}
 <!-- start code here -->
 <body>
-
   <div class="backgroundimg">
-    <img src="{{ url_for('static', filename='img/fixedschoolimg.jpg') }}" alt="">
+    <img
+      src="{{ url_for('static', filename='img/fixedschoolimg.jpg') }}"
+      alt=""
+    />
   </div>
   <div class="banner">
     <div class="advertisement">
       <div class="image-container">
         <img
-          src="{{ url_for('static', filename='img/sample_pic.jpg') }}"
+          src="{{ url_for('static', filename='img/fixedschoolimg.jpg') }}"
           alt="School Entrance"
         />
       </div>
@@ -35,15 +37,11 @@
         <h1>Making mistake is okay,it's how we learn</h1>
         <p></p>
         <h2>Our Aim</h2>
-        <p>is to be able to provide you with enjoyable and elated moments <br></p>
+        <p>
+          is to be able to provide you with enjoyable and elated moments <br />
+        </p>
       </div>
-
-     
-      
     </div>
-
-    
   </div>
-
 </body>
 {% endblock %}

@@ -1,0 +1,498 @@
+[
+  {
+    "no": 1,
+    "question": "ဗိုလ်ချုပ်အောင်ဆန်း၏ရည်းစားဦးအမည်မှာ ",
+    "choices": {
+      "a": "မခင်ရီ",
+      "b": "မစုကြည်",
+      "c": "မခင်ကြည်"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 2,
+    "question": "ဖြူထိုင်းပါတီ၏ခေါင်းဆောင်၊ ထိုင်းနိုင်ငံ၏၂၈ယောက်မြောက်ဝန်ကြီးချုပ်ဖြစ်ခဲ့သည့်အမျိုးသမီးမှာ ",
+    "choices": {
+      "a": "ယင်လပ်ရှင်နဝပ်",
+      "b": "ဆရတ်သာထားဝီဆင်း",
+      "c": "ဆွန်ဂရမ်လာဗွန်ဘူ "
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 3,
+    "question": "မြန်မာနိုင်ငံ၏အကျယ်ဆုံးမြစ်မှာ ",
+    "choices": {
+      "a": "ဧရာဝတီ ",
+      "b": "ချင်းတွင်း",
+      "c": "သံလွင် "
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 4,
+    "question": "HIV ပိုးသည်__မှတစ်ဆင့်ကူးစက်သည်။  ",
+    "choices": {
+      "a": "တံ‌တွေး",
+      "b": "ချွေး",
+      "c": "သွေး "
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 5,
+    "question": "အစားအစာအုပ်စု(၃)ခုတွင်ထောပတ်သည်__အုပ်စုတွင်ပါ ဝင်သည်။ ",
+    "choices": {
+      "a": "ခန္ဓာကိုယ်ကြီးထွားဖွံဖြိုးစေသော",
+      "b": "ရောဂါကာကွယ်စေသော ",
+      "c": "အင်အားဖြစ်စေသော"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 6,
+    "question": "နောင်ပွင့်မည့်အရိမေတ္တေယျမြတ်စွာဘုရားလက်ထက်တွင်ဘုရားငယ်ဖြစ်မည့်သူ ",
+    "choices": {
+      "a": " မာရ်နတ် ",
+      "b": " ဒေဝဒတ် ",
+      "c": " အာဠာဝကဘီလူး"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 7,
+    "question": "တရုတ်နိုင်ငံတွင်ကွန်မြူနစ်စနစ်ကိုအရိုးစွဲအောင်ကျင့်သုံးခဲ့သူ ",
+    "choices": {
+      "a": "ကွန်ဖြူးရှပ်",
+      "b": "မာန်ချူး",
+      "c": "မော်စီတုံး "
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 9,
+    "question": "အင်းတော်ကြီးရေအိုင်အလယ်ရှိဘုရားအမည်",
+    "choices": {
+      "a": "မြမဉ္ဇ  ",
+      "b": "ရွှေမဉ္ဇ",
+      "c": "ငွေမဉ္ဇ"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 10,
+    "question": "မြန်မာနိုင်ငံ၏အထင်ရှားဆုံးဥယျာဉ်မှာ",
+    "choices": {
+      "a": "လှော်ကားဥယျာဉ် ",
+      "b": "ရုက္ခဗေဒပန်းခြံ",
+      "c": "နေပြည်တော်ရေပန်းဥယျာဉ်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 11,
+    "question": "ပဲအမျိုးမျိုးတွင်_____ကိုရရှိသည်။ ",
+    "choices": {
+      "a": "ဗီတာမင်ဓာတ်",
+      "b": "အမျှင်ဓာတ်",
+      "c": "အသားဓာတ်"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 12,
+    "question": "အမေရိကန်သမ္မတအိုဗားမားနှင့်အတူရွေးကောက်ပွဲတွင်ယှဉ်ပြိုင်ခဲ့သောအမျိူးသမီးမှာ ",
+    "choices": {
+      "a": "အန်တိုနီဘလင်ကန် ",
+      "b": "ဟီလာရီကလင်တန်",
+      "c": "ဂျော်ဂျီယိုမီလိုနီ"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 13,
+    "question": "2023၏အချမ်းသာဆုံးyoutuber name မှာ",
+    "choices": {
+      "a": "Cocomelon  ",
+      "b": "Cody Ko",
+      "c": "I ShowSpeed"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 14,
+    "question": "ပုဂံခေတ်တွင်ဆံထုံး ထုံးနည်း__ရှိသည်။ ",
+    "choices": {
+      "a": "၅၃ ",
+      "b": "၅၅",
+      "c": "၅၆"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 15,
+    "question": "ဆိတ်နှင့်သိုး(၃၆)ကောင်ရှိသည်။သိုးသည်ဆိတ်ထက်၅ဆများ၏။ဆိတ်မည်မျှနည်း။",
+    "choices": {
+      "a": "၇ကောင် ",
+      "b": "၆ကောင်",
+      "c": "၅ကောင်"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 16,
+    "question": "Venesဂြိုလ်ကို__ဟုခေါ်သည်။ ",
+    "choices": {
+      "a": "သောကြာဂြိုလ်",
+      "b": "ကြာသပတေးဂြိုလ်",
+      "c": "ဗုဒ္ဓဟူးဂြိုလ်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 17,
+    "question": "အမေရိကန်နိုင်ငံ၏မြိုတော်",
+    "choices": {
+      "a": "ချီကာကို ",
+      "b": "ဝါရှင်တန်",
+      "c": "နယူးယောက်"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 18,
+    "question": "ဒေါ်သန်းတင်၏ခင်ပွန်းမှာ ",
+    "choices": {
+      "a": "ဆုမြိုင် ",
+      "b": "မင်းယုဝေ",
+      "c": "မင်းသုဝဏ်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 19,
+    "question": "မြန်မာနိုင်ငံ၏သရုပ်ဆောင်ကြေးအမြင့်ဆုံးမင်းသားမှာ",
+    "choices": {
+      "a": "ပြေတီဦး ",
+      "b": "မြင့်မြတ်",
+      "c": "နေတိုး"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 20,
+    "question": "တရုတ်နိုင်ငံမှမြန်မာနိုင်ငံသိုစီးဆင်းလာသောမြစ်မှာ",
+    "choices": {
+      "a": "ရွှေလီမြစ် ",
+      "b": "နတ်မြစ်",
+      "c": "မေခမြစ်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 20,
+    "question": "မြန်မာနိုင်ငံ၏နိုင်ငံတော်သီချင်းရေးစပ်ခဲ့သူမှာ",
+    "choices": {
+      "a": "ဦးနု ",
+      "b": "ဦးတင်",
+      "c": "ဦးမြ"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+
+  {
+    "no": 21,
+    "question": "ဂေါတမမြတ်စွာဘုရားသည်နေရဉ္ဇရာမြစ်အတွင်းသို‌ရွှေခွက်ပေါင်း__ခွက်မျှောခဲ့သည်။ ",
+    "choices": {
+      "a": "၄၉",
+      "b": "၆၉ ",
+      "c": "၅၉"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 22,
+    "question": " 2023၏The most handsome in the worldဖြစ်ခဲ့သူမှာ",
+    "choices": {
+      "a": "Paying Takhon",
+      "b": "Kim Taehyung ",
+      "c": "Wang Yi Bo"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 23,
+    "question": "တရုတ်နိုင်ငံ၏ပထမဆုံးအမျိုးသမီးသမ္မတ",
+    "choices": {
+      "a": "ကျောက်လုစီ ",
+      "b": "ချိုင်အင်းဝမ်",
+      "c": "ဝူရီ"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 24,
+    "question": "နှမ်းထောင်းစုံမုန့်သည်__ဒေသထွက်မုန့်ဖြစ်သည်။ ",
+    "choices": {
+      "a": "အထက်မြန်မာပြည်",
+      "b": "အောက်မြန်မာပြည်",
+      "c": "မော်လမြိုင်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 25,
+    "question": "သမ္မတဦး‌ထင်ကျော်၏ဖခင်မှာစာရေးဆရာ___ဖြစ်သည်။  ",
+    "choices": {
+      "a": "မင်းသုဝဏ် ",
+      "b": "ဇေယျ",
+      "c": "ဇော်ဂျီ"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 26,
+    "question": "မြန်မာနိုင်ငံ၏လူဦးရေအနည်းဆုံးပြည်နယ်/တိုင်းဒေသကြီးမှာ ",
+    "choices": {
+      "a": "မကွေးတိုင်းဒေသကြီး ",
+      "b": "ကယားပြည်နယ် ",
+      "c": "နေပြည်တော်"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 27,
+    "question": "ရေခဲတုံးနှင့်ရေချိုးခြင်းသည်__ကိုသက်သာသည်။ ",
+    "choices": {
+      "a": "ခေါင်းမူးခြင်း",
+      "b": "ကြွက်သားနာကျင်မှု",
+      "c": "အလေးချိန်တတ်မှု"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 28,
+    "question": "ကမ္ဘာ့လူဦးရေအနည်းဆုံးနိုင်ငံ ",
+    "choices": {
+      "a": "ဘင်္ဂလားဒေ့ရှ် ",
+      "b": "နော်မာ",
+      "c": "ဗာတီကန်စီးတီး"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 29,
+    "question": " 2023 တရုတ်နိုင်ငံ၏Top 1သရုပ်ဆောင်မှာ ",
+    "choices": {
+      "a": "Xiao Zhan",
+      "b": "Xu Kai ",
+      "c": "Wang Yi Bo"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 30,
+    "question": " Periodic table တွင်ရှိသောစုစု‌ပေါင်းelements  ",
+    "choices": {
+      "a": "119 ",
+      "b": "116 ",
+      "c": "113"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 31,
+    "question": " အာဇာနည်၉ဦးတွင်ဦးဘဝင်းသည်_ဖြစ်သည်။   ",
+    "choices": {
+      "a": "အတွင်းဝန် ",
+      "b": " ဝန်ကြီး",
+      "c": "ဝန်ကြီးချုပ်"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 32,
+    "question": " မြန်မာနိုင်ငံ၏ပထမဆုံးသံတမန်မှာ",
+    "choices": {
+      "a": "ဒေါ်ခင်ကြည် ",
+      "b": "ဒေါ်အောင်ဆန်းစုကြည် ",
+      "c": "ဦးသန့်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 33,
+    "question": " အာရှကုန်းတွင်းပိတ်နိုင်ငံများတွင်____နိုင်ငံလည်းပါဝင်သည်။",
+    "choices": {
+      "a": "အီရတ်  ",
+      "b": " ထိုင်း",
+      "c": "ဘူတန်"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 34,
+    "question": " ရှင်မဟာရဌသာရအဓိကရေးသားသောစာပေမှာ",
+    "choices": {
+      "a": "ဆုံးမစာ",
+      "b": "ပါဠိ",
+      "c": "ကဗျာ"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 35,
+    "question": "သကြားနှင့်တွဲမစားသင့်သောအသီးမှာ  ",
+    "choices": {
+      "a": "ကြက်မောက်သီး ",
+      "b": "မင်းဂွတ်သီး",
+      "c": "ဖရဲသီး"
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 36,
+    "question": "အီရတ်နိုင်ငံသည်__တိုက်တွင်ပါဝင်သည်။  ",
+    "choices": {
+      "a": "အာဖရိက ",
+      "b": "ဥရောပ",
+      "c": "အာရှ"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 37,
+    "question": " Facebookသုံးစွဲမှုအများဆုံးနိုင်ငံ  ",
+    "choices": {
+      "a": " အိန္ဒိယ  ",
+      "b": " တရုတ်",
+      "c": " အင်္ဂလန်"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 38,
+    "question": "အသေးငယ်ဆုံးအမှုန်များကို__ဟုခေါ်သည်",
+    "choices": {
+      "a": " အက်တန်",
+      "b": " အင်္ဂါ ",
+      "c": " မော်လီးကျူး"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 39,
+    "question": "သာမန်လူတစ်ဦးသည်အသက်_နှစ်အထိအရပ်မြင့်ကြသည်။",
+    "choices": {
+      "a": " ၂၁ ",
+      "b": " ၂၀",
+      "c": " ၁၈ "
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 40,
+    "question": "ကမ္ဘာ့အရပ်အရှည်ဆုံးလူသား၏အရပ်အမြင့်မှာ",
+    "choices": {
+      "a": "၁၀ပေ၅လက်မ  ",
+      "b": "၆ပေ၅လက်မ ",
+      "c": "၈ပေ၅လက်မ "
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 41,
+    "question": "စည်းလုံးခြင်းအင်အားနှင့်ဆန့်ကျင်သည့်စကားပုံမှာ ",
+    "choices": {
+      "a": "နွားကွဲကကျားဆွဲ ",
+      "b": " စည်းလုံးညီညာအောင်ကြောင်းဖြာ ",
+      "c": "ကိုင်းကျွန်းမှီ၊ကျွန်းကိုင်းမှီ"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 42,
+    "question": "အ‌လောင်းတော်ကဿပသည်_ဘုရားရှင်လက်ထက်တွင်ပျံလွန်တော်မူခဲ့သည်။ ",
+    "choices": {
+      "a": "ဂေါတမ ",
+      "b": " ကကုသန်",
+      "c": "ကဿပ"
+    },
+    "correct_answer": "a",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 43,
+    "question": "ဖြူထိုင်းပါတီ၏ခေါင်းဆောင်၊ထိုင်းနိုင်ငံ၏____ယောက်မြောက်ဝန်ကြီးချုပ်မှာယင်လပ်ရှင်နာဝပ်ဖြစ်သည်။",
+    "choices": {
+      "a": "၁၈",
+      "b": " ၂၈ ",
+      "c": " ၃၈ "
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 44,
+    "question": "မြန်မာနိုင်ငံ၏တတိယအကျော်ကြားဆုံးဘုရား",
+    "choices": {
+      "a": "ရွှေတိဂုံ",
+      "b": "ကျိုက်ထီးရိုး ",
+      "c": "မဟာမြတ်မုနိ  "
+    },
+    "correct_answer": "b",
+    "subject": "generalknowledgemyan"
+  },
+  {
+    "no": 45,
+    "question": "ကျိုက်ထီးရိုး‌ဘုရားသည်__မြိုတွင်တည်ရှိသည်။",
+    "choices": {
+      "a": "ကျိုက်မရော",
+      "b": "ကျိုက္ခမီ",
+      "c": "ကျိုက်ထို"
+    },
+    "correct_answer": "c",
+    "subject": "generalknowledgemyan"
+  }
+]

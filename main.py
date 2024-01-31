@@ -4,7 +4,7 @@ import uuid
 import random
 
 
-with open('g11testmyanmar.json', 'r', encoding='utf-8-sig') as file:
+with open('g10testmm.json', 'r', encoding='utf-8-sig') as file:
     g10testmyanmar = json.load(file)
 
 with open('grade10english.json', 'r', encoding='utf-8-sig') as file:
@@ -43,7 +43,10 @@ with open('primaryschoolmathsquiz.json', 'r', encoding='utf-8-sig') as file:
 
 with open('generalknowledgeeng.json', 'r', encoding='utf-8-sig') as file:
     generalengschoolmathsquiz = json.load(file)
-    generalmmschoolmathsquiz = generalengschoolmathsquiz
+
+
+with open('generalknowledgemm.json', 'r', encoding='utf-8-sig') as file:
+    generalmmschoolmathsquiz = json.load(file)
 
 
 app = Flask("TMD_Entrance")
@@ -110,7 +113,7 @@ def create_grade_route(subject, grade):
             else:
                 if(request.view_args['id'] != ID):
                     return redirect(f"/g{grade}testmyanmar/")
-            return render_template(f'g10testmyanmar.html', test=eval(f"g{grade}test{subject}"), grade=grade, id=ID,
+            return render_template(f'entrance_test.html', test=eval(f"g{grade}test{subject}"), grade=grade, id=ID,
                     numbering_map=numbering_map, subject=subject, url=f"/g{grade}test{subject}/{'<id>' if subject != 'myanmar' else ''}")
         elif request.method == 'POST':
             for number, answer in request.form.items():
@@ -144,109 +147,12 @@ def result(grade):
      )
 
 
-
-# @app.route('/g10testenglish', methods=['GET', 'POST'])
-# def g10testenglish():
-#     if request.method == 'GET':
-#         return render_template('g10testmyanmar.html', test=grade10english, grade="10",
-#                                 numbering_map=numbering_map)
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/g10testmaths', methods=['GET', 'POST'])
-# def g10testmaths():
-#     if request.method == 'GET':
-#         return render_template('g10testmaths.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/grade11test/', methods=['GET', 'POST'])
-# def grade11_test():
-#     if request.method == 'GET':
-#         return render_template('g11test.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/g11testenglish/', methods=['GET', 'POST'])
-# def g11testenglish():
-#     if request.method == 'GET':
-#         return render_template('g11testenglish.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/g11testmaths/', methods=['GET', 'POST'])
-# def g11testmaths():
-#     if request.method == 'GET':
-#         return render_template('g11testmaths.html')
-#     elif request.method == 'POST':
-#         pass
-
-
-# @app.route('/grade12test/', methods=['GET', 'POST'])
-# def grade12_test():
-#     if request.method == 'GET':
-#         return render_template('g12test.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/grade12testenglish/', methods=['GET', 'POST'])
-# def grade12testenglish():
-#     if request.method == 'GET':
-#         return render_template('g12testenglish.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/grade12testmaths/', methods=['GET', 'POST'])
-# def grade12testmaths():
-#     if request.method == 'GET':
-#         return render_template('g12testmaths.html')
-#     elif request.method == 'POST':
-#         pass
-
-
 @app.route('/quiz', methods=['GET', 'POST'])
 def quiz():
     if request.method == 'GET':
         return render_template('quiz.html')
     elif request.method == 'POST':
         pass
-
-@app.route('/generalknowledge', methods=['GET', 'POST'])
-def generalknowledge():
-    if request.method == 'GET':
-        return render_template('generalnowledge.html')
-    elif request.method == 'POST':
-        pass
-
-@app.route('/gkmyaneng', methods=['GET', 'POST'])
-def gkmyaneng():
-    if request.method == 'GET':
-        return render_template('gkmyaneng.html')
-    elif request.method == 'POST':
-        pass
-
-
-# @app.route('/highschoolstudentquiz', methods=['GET', 'POST'])
-# def quizhighstudent():
-#     if request.method == 'GET':
-#         return render_template('quizhighstudent.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/middleschoolstudentquiz', methods=['GET', 'POST'])
-# def quizmiddlestudent():
-#     if request.method == 'GET':
-#         return render_template('quizmiddlestudent.html')
-#     elif request.method == 'POST':
-#         pass
-
-# @app.route('/primaryschoolstudentquiz', methods=['GET', 'POST'])
-# def quizprimarystudent():
-#     if request.method == 'GET':
-#         return render_template('quizprimarystudent.html')
-#     elif request.method == 'POST':
-#         pass
-
 
 def create_student_quiz_route(level, previous_selection):
     
@@ -273,6 +179,9 @@ def create_student_quiz_route(level, previous_selection):
                 repeat_size = int(selection_size * repeat_percentage / 100)
                 repeated_questions = random.sample(previous_selection[level], repeat_size)
                 selected_questions.pop()
+                selected_questions.pop()
+                selected_questions.pop()
+                selected_questions.pop()
                 selected_questions.extend(repeated_questions)
 
             # Shuffle the final selection
@@ -287,7 +196,7 @@ def create_student_quiz_route(level, previous_selection):
             for q in selected_questions:
                 student_quiz[level][str(q['no'])] = ""
             previous_selection[level] = selected_questions
-            return render_template('quizprimarystudent.html', level=level, questions=enumerate(selected_questions),
+            return render_template('schoolLevelQuiz.html', level=level, questions=enumerate(selected_questions),
             url=f"/{level}schoolstudentquiz/")
         elif request.method == 'POST':
             for number, answer in request.form.items():
@@ -321,23 +230,6 @@ def resultSchoolLevelQuiz(level):
     return render_template("resultSchoolLevelQuiz.html", level=level, answers=student_quiz[level], 
     numberOfCorrectAnswers=numberOfCorrectAnswers, questions=enumerate(random_questions))
 
-
-
-
-@app.route('/myanmargk', methods=['GET', 'POST'])
-def myanmargk():
-    if request.method == 'GET':
-        return render_template('myanmargk.html')
-    elif request.method == 'POST':
-        pass
-
-
-@app.route('/englishgk', methods=['GET', 'POST'])
-def englishgk():
-    if request.method == 'GET':
-        return render_template('englishgk.html')
-    elif request.method == 'POST':
-        pass
 
 
 if __name__ == '__main__':

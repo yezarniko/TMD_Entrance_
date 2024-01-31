@@ -82,6 +82,9 @@
     "
   >
     <canvas id="progressCircle" width="300" height="300"></canvas>
+    <a id="submit-btn" href="/entrance/" style="width: 10%; margin-top: 4em"
+      >Back</a
+    >
   </div>
 
   <!-- <a href="/grade10test">Back</a> -->
@@ -103,6 +106,7 @@
   function drawProgressCircle(progress, id, subject) {
     const canvas = document.getElementById(id);
     const ctx = canvas.getContext("2d");
+    var color = "#FFFC9B";
 
     var grade = "";
 
@@ -110,8 +114,10 @@
       grade = "Good Job";
     } else if (0.8 <= progress < 0.4) {
       grade = "Awesome";
-    } else if (progress >= 0.8) {
+      color = "#96E9C6";
+    } else if (progress > 0.8) {
       grade = "Brilliant";
+      color = "#864AF9";
     }
 
     // Clear the canvas
@@ -126,7 +132,7 @@
       0,
       2 * Math.PI
     );
-    ctx.strokeStyle = "#ddd";
+    ctx.strokeStyle = "#BFCFE711";
     ctx.lineWidth = 15;
     ctx.stroke();
 
@@ -139,7 +145,7 @@
       -0.5 * Math.PI,
       (2 * progress - 0.5) * Math.PI
     );
-    ctx.strokeStyle = "#4CAF50"; // Green color for the progress
+    ctx.strokeStyle = color;
     ctx.lineWidth = 15;
     ctx.stroke();
 
@@ -155,10 +161,37 @@
     );
   }
 
-  // Example usage: Update the progress circle with a value between 0 and 1
-  const progressValue = 0.7; // Example: 70% progress
-  drawProgressCircle(
+  // Function to animate the progress
+  function animateProgress(start, end, duration, id) {
+    const startTime = Date.now();
+
+    function update() {
+      const currentTime = Date.now();
+      const elapsedTime = currentTime - startTime;
+
+      // Calculate the progress based on elapsed time
+      const progress = Math.min(1, elapsedTime / duration);
+
+      // Interpolate between start and end values
+      const currentProgress = start + progress * (end - start);
+
+      // Draw the progress circle
+      drawProgressCircle(currentProgress, id);
+
+      // Continue the animation if not complete
+      if (progress < 1) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    // Start the animation
+    requestAnimationFrame(update);
+  }
+
+  animateProgress(
+    0,
     parseInt("{{numberOfCorrectAnswers}}") / 15,
+    2000,
     "progressCircle"
   );
 </script>

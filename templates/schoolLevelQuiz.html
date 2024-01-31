@@ -7,7 +7,7 @@
 {% block style %}
 <link
   rel="stylesheet"
-  href="{{ url_for('static', filename='quizmiddlestudent.css') }}"
+  href="{{ url_for('static', filename='schoolLevelQuiz.css') }}"
 />
 {% endblock %}
 <!--  -->
@@ -17,9 +17,24 @@
 <!-- start code here -->
 <body>
   <header class="header">
+    <div>
+      <img
+        src="/static/img/tmdlogofixed.png"
+        alt="Logo Left"
+        class="logo-left"
+      />
+    </div>
     <div class="header__container">
+      <!--  -->
+      {% if level[0] == "g" %}
+      <!--  -->
+      <h1>General Knowledge</h1>
+      {% else %}
       <h1>Quiz for {{level}} school Student</h1>
+      <!--  -->
+      {% endif %}
       <h2 class="clock" style="position: absolute"></h2>
+      <!--  -->
     </div>
     <div class="timer"></div>
   </header>
@@ -32,7 +47,7 @@
       <!--  -->
       <div class="quiz-container">
         <div class="question">
-          <h2>{{index+1}}. {{question["question"]}}</h2>
+          <h3>{{index+1}}. {{question["question"]}}</h3>
         </div>
         <!--  -->
         {% for number, choice in question["choices"].items() %}
