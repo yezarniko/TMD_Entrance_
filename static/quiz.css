@@ -10,6 +10,16 @@ header {
     color: #fff;
     text-align: center;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-left,
+.logo-right {
+  max-height: 70px;
+  aspect-ratio: 1/1;
+  ; /* Adjust the maximum height as needed */
 }
 
 .image-container {
@@ -21,14 +31,18 @@ header {
 }
 
 .image {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
     overflow: hidden;
     margin: 10px;
     max-width: 300px;
 }
-
-img {
+.image img{
     width: 100%;
+}
+img {
+    
     height: auto;
     transition: transform 0.3s ease-in-out;
 }

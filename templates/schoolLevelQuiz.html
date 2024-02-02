@@ -312,7 +312,29 @@
         </div>
       </div>
     </section>
+    <section class="active section confirm">
+      <!-- <button class="show-modal">Show Modal</button> -->
+
+      <div class="modal-box">
+        <div class="modal-box__icon">
+          <img src="{{ url_for('static', filename='img/student-card.png') }}" />
+        </div>
+        <br />
+        <h4>Are you sure you want to start</h4>
+        
+
+        <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
+
+        <div class="buttons">
+          <button onclick="closeBTN2()">Ok</button>
+          <a href="/entrance/"> 
+            <button>close</button>
+           </a>
+        </div>
+      </div>
+    </section>
   </div>
+
 </body>
 <script>
   var timer = document.querySelector(".timer");
@@ -324,8 +346,23 @@
   var closeBTN = () => {
     document.querySelector(".section").classList.remove("active");
   };
+  
+  var closeBTN2 = () => {
+      document.querySelector(".confirm").classList.remove("active"); 
+  
+      startTimer(function () {
+      seconds = seconds - 1;
+      timer.style.width = `${(100 / SECONDS) * seconds}%`;
 
-  const SECONDS = 900;
+      if (seconds < 60) {
+        timer.style.background = "#FF6868";
+      }
+
+      clockElement.innerHTML = secondsToTimeFormat(seconds);
+    });
+    };
+
+  const SECONDS = parseInt("{{300 if level[0] == 'g' else  900}}");
   var seconds = SECONDS;
 
   function startTimer(callback) {
@@ -348,16 +385,7 @@
     return formattedTime;
   }
 
-  startTimer(function () {
-    seconds = seconds - 1;
-    timer.style.width = `${(100 / SECONDS) * seconds}%`;
-
-    if (seconds < 60) {
-      timer.style.background = "#FF6868";
-    }
-
-    clockElement.innerHTML = secondsToTimeFormat(seconds);
-  });
+  
   const section = document.querySelector("section"),
     //   overlay = document.querySelector(".overlay"),
     //   showBtn = document.querySelector(".show-modal"),

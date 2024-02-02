@@ -53,7 +53,7 @@
       {% endfor %}
       <div class="submitbutton">
         <!-- <a href="/g{{grade}}test{{numbering_map[subject]}}"> -->
-        <button id="submit-btn" type="submit">next</button>
+        <button id="submit-btn" type="submit">{{"submit" if subject == "maths" else "next" }}</button>
         <!-- </a> -->
       </div>
     </form>
@@ -74,7 +74,7 @@
       </div>
     </section>
     {% if subject == "myanmar" %}
-    <section class="active section">
+    <section class=" section UID">
       <!-- <button class="show-modal">Show Modal</button> -->
 
       <div class="modal-box">
@@ -91,7 +91,30 @@
         <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
 
         <div class="buttons">
-          <button onclick="closeBTN()">Ok, Close</button>
+          <button onclick="closeBTN()">Ok</button>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="active section confirm">
+      <!-- <button class="show-modal">Show Modal</button> -->
+
+      <div class="modal-box">
+        <div class="modal-box__icon">
+          <img src="{{ url_for('static', filename='img/student-card.png') }}" />
+        </div>
+        <br />
+        <h4>Are you sure you want to start</h4>
+        
+
+        <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
+
+        <div class="buttons">
+          <button onclick="closeBTN2()">Ok</button>
+          <a href="/entrance/"> 
+            <button>close</button>
+           </a>
         </div>
       </div>
     </section>
@@ -106,7 +129,21 @@
     );
 
     var closeBTN = () => {
-      document.querySelector(".section").classList.remove("active");
+      document.querySelector(".UID").classList.remove("active");
+    };
+    var closeBTN2 = () => {
+      document.querySelector(".confirm").classList.remove("active"); 
+      document.querySelector(".UID").classList.add("active");
+      startTimer(function () {
+      seconds = seconds - 1;
+      timer.style.width = `${(100 / SECONDS) * seconds}%`;
+
+      if (seconds < 60) {
+        timer.style.background = "#FF6868";
+      }
+
+      clockElement.innerHTML = secondsToTimeFormat(seconds);
+    });
     };
 
     const SECONDS = parseInt("{{2700 if subject == 'maths' else 900}}");
@@ -132,7 +169,8 @@
       return formattedTime;
     }
 
-    startTimer(function () {
+   {% if subject != "myanmar" %}
+   startTimer(function () {
       seconds = seconds - 1;
       timer.style.width = `${(100 / SECONDS) * seconds}%`;
 
@@ -142,6 +180,7 @@
 
       clockElement.innerHTML = secondsToTimeFormat(seconds);
     });
+   {% endif %}
 
     const section = document.querySelector("section"),
       //   overlay = document.querySelector(".overlay"),

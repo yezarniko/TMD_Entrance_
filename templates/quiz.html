@@ -14,46 +14,59 @@
 <!-- start code here -->
 <body>
     <header>
-        <h1>Quiz Webpage</h1>
+        
+        
+          <img
+            src="{{ url_for('static', filename='img/tmdlogofixed.png') }}"
+            alt="Logo Left"
+            class="logo-left"
+          />
+          <h1>Quiz Webpage</h1>
+          <img
+            src="{{ url_for('static', filename='img/tmdlogofixed.png') }}"
+            alt="Logo Right"
+            class="logo-right"
+          />
+        
     </header>
 
     <div class="image-container">
         <div class="image">
           <img
-            src="{{ url_for('static', filename='img/2498667.png') }}"
+            src="{{ url_for('static', filename='img/primary.jpg') }}"
             alt="Image 1"
           />
           <div class="overlay">
             <a href="/primaryschoolstudentquiz">
               <button class="hover-button">click</button>
             </a>
-            <p class="overlay-text">For age between  <br> Try your best and Good Luck buddy!</p>
+            <p class="overlay-text">For age between 6 and 9  <br> Try your best and Good Luck buddy!</p>
           </div>
         </div>
     
         <div class="image">
           <img
-            src="{{ url_for('static', filename='img/2498667.png') }}"
+            src="{{ url_for('static', filename='img/middle.jpg') }}"
             alt="Image 2"
           />
           <div class="overlay">
             <a href="/middleschoolstudentquiz">
               <button class="hover-button">click</button>
             </a>
-            <p class="overlay-text">For age between <br> Try your best and Good Luck buddy!</p>
+            <p class="overlay-text">For age between 10 and 14 <br> Try your best and Good Luck buddy!</p>
           </div>
         </div>
     
         <div class="image">
           <img
-            src="{{ url_for('static', filename='img/2498667.png') }}"
+            src="{{ url_for('static', filename='img/high.jpg') }}"
             alt="Image 3"
           />
           <div class="overlay">
             <a href="/highschoolstudentquiz">
               <button class="hover-button">click</button>
             </a>
-            <p class="overlay-text">For age between <br> Try your best and Good Luck buddy!</p>
+            <p class="overlay-text">For age between 15 and above <br> Try your best and Good Luck buddy!</p>
           </div>
         </div>
       </div>

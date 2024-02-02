@@ -15,65 +15,17 @@
 <body>
   <h1>Results</h1>
   <br /><br />
-  <div class="questions__container">
-    <div class="subject">
-      Answers
-      <div class="down__icon" id="answers">
-        <img src="{{ url_for('static', filename='img/down-button.png') }}" />
-      </div>
-    </div>
-    <section id="answers" class="">
-      <!--  -->
-      {% for number, question in questions %}
-      <!--  -->
-      <div
-        style="color: {{'red' if answers[question['no']|string] == '' else 'black'}}"
-      >
-        {{number+1}}. {{question["question"]}} {{'no answer' if
-        answers[question['no']|string] == '' else ''}}
-      </div>
-      <div
-        style="
-          width: 60%;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-        "
-      >
-        <ul class="choices">
-          <!--  -->
-          {% for num, choice in question["choices"].items() %}
-          <!--  -->
-          {% if num == answers[question['no']|string]%}
-          <!--  -->
-          {% if answers[question['no']|string] == question["correct_answer"] %}
-          <li style="color: green">{{num}}) {{choice}}</li>
-          <!--  -->
-          {% else %}
-          <li style="color: red">{{num}}) {{choice}}</li>
 
-          <!--  -->
-          {% endif %}
-          <!--  -->
-          {% else %}
-          <li>{{num}}) {{choice}}</li>
-          <!--  -->
-          {% endif %}
-          <!--  -->
-          {% endfor %}
-          <!--  -->
-        </ul>
-        <div>correct_answer: {{ question['correct_answer'] }}</div>
-      </div>
-      <br />
-
-      <!--  -->
-      {% endfor %}
-    </section>
-
-    <!--  -->
-  </div>
+  
+  
   <div>Marks: {{numberOfCorrectAnswers}}</div>
+  <div class="resulttext1">
+    <h3>You have got {{((numberOfCorrectAnswers/15)*100)|int}}% </h3>
+    
+  </div>
+  <div class="resulttext2">
+    <h3> MAKING MISTAKES IS OK & IT'S HOW WE LEARN <br> KEEP IT UP!!!BUDDY</h3>
+  </div>
   <div
     style="
       display: flex;
@@ -87,22 +39,24 @@
     >
   </div>
 
+  
+
   <!-- <a href="/grade10test">Back</a> -->
 </body>
 <script>
-  var answersButton = document.querySelector("div#answers img");
-  var answersSection = document.querySelector("section#answers");
+  // var answersButton = document.querySelector("div#answers img");
+  // var answersSection = document.querySelector("section#answers");
 
-  answersButton.addEventListener("click", function () {
-    if (answersSection.classList.contains("active")) {
-      answersSection.classList.remove("active");
-      answersButton.style.transform = "rotate(360deg)";
-    } else {
-      answersSection.classList.add("active");
-      answersButton.style.transform = "rotate(180deg)";
-    }
-  });
-
+  // answersButton.addEventListener("click", function () {
+  //   if (answersSection.classList.contains("active")) {
+  //     answersSection.classList.remove("active");
+  //     answersButton.style.transform = "rotate(360deg)";
+  //   } else {
+  //     answersSection.classList.add("active");
+  //     answersButton.style.transform = "rotate(180deg)";
+  //   }
+  // });
+  
   function drawProgressCircle(progress, id, subject) {
     const canvas = document.getElementById(id);
     const ctx = canvas.getContext("2d");
@@ -115,9 +69,9 @@
     } else if (0.8 <= progress < 0.4) {
       grade = "Awesome";
       color = "#96E9C6";
-    } else if (progress > 0.8) {
+    } else if (progress >= 0.8) {
       grade = "Brilliant";
-      color = "#864AF9";
+      color = "#19c6f1";
     }
 
     // Clear the canvas

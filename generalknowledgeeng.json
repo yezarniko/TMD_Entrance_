@@ -349,8 +349,8 @@
                                             "question": "How many elements in periodic table",
                                             "choices": {
                                               "a": "108",
-                                              "b": "188",
-                                              "c": "118"
+                                              "b": "199",
+                                              "c": "119"
                                             },
                                             "correct_answer": "c",
 
@@ -428,7 +428,7 @@
                                                           "question": "Who is father of modern physics",
                                                           "choices": {
                                                             "a": "Albert Einstein",
-                                                            "b": "Obbenheimei",
+                                                            "b": "Oppenheimer",
                                                             "c": "Isaac Newton"
                                                           },
                                                           "correct_answer": "a",

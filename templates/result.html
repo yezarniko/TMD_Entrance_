@@ -14,83 +14,13 @@
 <!-- start code here -->
 <body>
   <h1>Results</h1>
+
+  
+
   <br /><br />
   {% for subject, questions in solutions.items() %}
   <!--  -->
-  <div class="questions__container">
-    <div class="subject">
-      {{subject}}
-      <div class="down__icon" id="{{subject}}">
-        <img src="{{ url_for('static', filename='img/down-button.png') }}" />
-      </div>
-    </div>
-    <section id="{{subject}}">
-      <!--  -->
-      {% for question in questions %}
-      <!--  -->
-      {% if student_answers[grade][subject][question['no']|string] == "" %}
-      <!--  -->
-      <div style="color: red">
-        {{question['no']}} {{question["question"]}} no answer
-      </div>
-      <!--  -->
-      {% else %}
-      <!--  -->
-      <div>{{question['no']}} {{question["question"]}}</div>
-      <!--  -->
-      {% endif %}
-      <div
-        style="
-          width: 60%;
-          display: flex;
-          align-items: flex-end;
-          justify-content: space-between;
-        "
-      >
-        <ul class="choices">
-          {% for number, choice in question["choices"].items() %}
-          <!--  -->
-          {% if student_answers[grade][subject][question['no']|string] == number
-          %}
-          <!--  -->
-          {% if student_answers[grade][subject][question['no']|string] ==
-          question['correct_answer'] %}
-          <!--  -->
-          <li style="color: green">
-            {{number if subject != "myanmar" else numbering_map[number]}})
-            {{choice}}
-          </li>
-          <!--  -->
-          {% else %}
-          <!--  -->
-          <li style="color: red">
-            {{number if subject != "myanmar" else numbering_map[number]}})
-            {{choice}}
-          </li>
-          <!--  -->
-          {% endif %}
-          <!--  -->
-          {% else %}
-          <li>
-            {{number if subject != "myanmar" else numbering_map[number]}})
-            {{choice}}
-          </li>
-          <!--  -->
-          {% endif %}
-          <!--  -->
-          {% endfor %}
-        </ul>
-        <div>
-          correct_answer: {{ question['correct_answer'] if subject != "myanmar"
-          else numbering_map[question['correct_answer']]}}
-        </div>
-      </div>
-      <br />
-      <!--  -->
-      {% endfor %}
-    </section>
-    <!--  -->
-  </div>
+ 
   {% endfor %}
   <div>Myanmar: {{numberOfCorrectAnswers["myanmar"]}} marks</div>
   <br />
@@ -98,6 +28,20 @@
   <br />
   <div>Maths: {{numberOfCorrectAnswers["maths"]}} marks</div>
   <br />
+
+  <div class="resulttext1">
+    <h3>You have got {{((numberOfCorrectAnswers['myanmar']/15)*100)|int}}% in Myanmar </h3>
+  </div>
+  <div class="resulttext2">
+    <h3>You have got {{((numberOfCorrectAnswers['english']/15)*100)|int}}% in English</h3>
+  </div>
+  <div class="resulttext3">
+    <h3>You have got {{((numberOfCorrectAnswers['maths']/15)*100)|int}}% in Maths</h3>
+  </div>
+  <div class="resulttext4">
+    <h3>MAKING MISTAKES IS OK & IT'S HOW WE LEARN <br> KEEP IT UP!!!BUDDY</h3>
+  </div>
+
 
   <div
     style="display: flex; justify-content: space-between; flex-direction: row"
@@ -110,44 +54,44 @@
   <!-- <a href="/grade10test">Back</a> -->
 </body>
 <script>
-  var myanmarButton = document.querySelector("div#myanmar img");
-  var myanmarSection = document.querySelector("section#myanmar");
+  // var myanmarButton = document.querySelector("div#myanmar img");
+  // var myanmarSection = document.querySelector("section#myanmar");
 
-  var englishButton = document.querySelector("div#english img");
-  var englishSection = document.querySelector("section#english");
+  // var englishButton = document.querySelector("div#english img");
+  // var englishSection = document.querySelector("section#english");
 
-  var mathsButton = document.querySelector("div#maths img");
-  var mathsSection = document.querySelector("section#maths");
+  // var mathsButton = document.querySelector("div#maths img");
+  // var mathsSection = document.querySelector("section#maths");
 
-  myanmarButton.addEventListener("click", function () {
-    if (myanmarSection.classList.contains("active")) {
-      myanmarSection.classList.remove("active");
-      myanmarButton.style.transform = "rotate(360deg)";
-    } else {
-      myanmarSection.classList.add("active");
-      myanmarButton.style.transform = "rotate(180deg)";
-    }
-  });
+  // myanmarButton.addEventListener("click", function () {
+  //   if (myanmarSection.classList.contains("active")) {
+  //     myanmarSection.classList.remove("active");
+  //     myanmarButton.style.transform = "rotate(360deg)";
+  //   } else {
+  //     myanmarSection.classList.add("active");
+  //     myanmarButton.style.transform = "rotate(180deg)";
+  //   }
+  // });
 
-  englishButton.addEventListener("click", function () {
-    if (englishSection.classList.contains("active")) {
-      englishSection.classList.remove("active");
-      englishButton.style.transform = "rotate(360deg)";
-    } else {
-      englishSection.classList.add("active");
-      englishButton.style.transform = "rotate(180deg)";
-    }
-  });
+  // englishButton.addEventListener("click", function () {
+  //   if (englishSection.classList.contains("active")) {
+  //     englishSection.classList.remove("active");
+  //     englishButton.style.transform = "rotate(360deg)";
+  //   } else {
+  //     englishSection.classList.add("active");
+  //     englishButton.style.transform = "rotate(180deg)";
+  //   }
+  // });
 
-  mathsButton.addEventListener("click", function () {
-    if (mathsSection.classList.contains("active")) {
-      mathsSection.classList.remove("active");
-      mathsButton.style.transform = "rotate(360deg)";
-    } else {
-      mathsSection.classList.add("active");
-      mathsButton.style.transform = "rotate(180deg)";
-    }
-  });
+  // mathsButton.addEventListener("click", function () {
+  //   if (mathsSection.classList.contains("active")) {
+  //     mathsSection.classList.remove("active");
+  //     mathsButton.style.transform = "rotate(360deg)";
+  //   } else {
+  //     mathsSection.classList.add("active");
+  //     mathsButton.style.transform = "rotate(180deg)";
+  //   }
+  // });
   // Function to draw the progress circle
   function drawProgressCircle(progress, id, subject) {
     const canvas = document.getElementById(id);
@@ -163,7 +107,7 @@
       color = "#96E9C6";
     } else if (progress > 0.8) {
       grade = "Brilliant";
-      color = "#864AF9";
+      color = "#19c6f1";
     }
 
     // Clear the canvas

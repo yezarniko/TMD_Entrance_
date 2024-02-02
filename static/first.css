@@ -12,11 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
-     
-  
-  
-  
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
   background-size: cover;
   background-position: center;
 }
@@ -49,15 +45,19 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  height: 100%;
 }
 
 .image-container {
   flex: 1;
   overflow: hidden;
+  max-width: 550px;
+  margin-right: 20px;
+  margin-left: 50px;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -66,6 +66,7 @@ img {
   max-width: 400px;
   padding: 20px;
   text-align: center;
+
 }
 
 h1 {
@@ -82,11 +83,18 @@ h1:nth-child(2){
 
 h2{
   color: #136bef;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.aim{
+  position: relative;
+  margin-top: 10px;
 }
 
 p {
-  color: #fbf6f6;
+  color:  #136bef;
   font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .cta-button {
@@ -130,17 +138,21 @@ button:hover span {
 
 .container {
   text-align: center;
-  
+  position: relative;
   width: 40%;
   margin-inline: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 1em;
+  margin-top: 3em;
+}
+
+.container1{
+  margin-top: 5px;
 }
 
 .container h1 {
-  color: #136bef;
+  color: #13d2ef;
 }
 
 .container h3{
