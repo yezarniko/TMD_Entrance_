@@ -29,18 +29,20 @@
   <div>Maths: {{numberOfCorrectAnswers["maths"]}} marks</div>
   <br />
 
-  <div class="resulttext1">
-    <h3>You have got {{((numberOfCorrectAnswers['myanmar']/15)*100)|int}}% in Myanmar </h3>
-  </div>
   <div class="resulttext2">
-    <h3>You have got {{((numberOfCorrectAnswers['english']/15)*100)|int}}% in English</h3>
-  </div>
-  <div class="resulttext3">
-    <h3>You have got {{((numberOfCorrectAnswers['maths']/15)*100)|int}}% in Maths</h3>
-  </div>
-  <div class="resulttext4">
     <h3>MAKING MISTAKES IS OK & IT'S HOW WE LEARN <br> KEEP IT UP!!!BUDDY</h3>
   </div>
+
+  <div class="resulttext4">
+    <h3>You have got</h3>
+  </div>
+  <div class="resulttext2">
+    <h3></h3>
+  </div>
+  <div class="resulttext3">
+    <h3></h3>
+  </div>
+  
 
 
   <div
@@ -50,10 +52,19 @@
     <canvas id="progressCircle2" width="250" height="250"></canvas>
     <canvas id="progressCircle3" width="250" height="250"></canvas>
   </div>
+
+ 
+
+  
+  
   <a id="submit-btn" href="/entrance/">Back</a>
   <!-- <a href="/grade10test">Back</a> -->
+
+  
 </body>
 <script>
+
+
   // var myanmarButton = document.querySelector("div#myanmar img");
   // var myanmarSection = document.querySelector("section#myanmar");
 
@@ -100,13 +111,13 @@
 
     var grade = "";
 
-    if (progress <= 0.4) {
-      grade = "Good Job";
-    } else if (0.8 <= progress < 0.4) {
-      grade = "Awesome";
+    if (progress < 0.4) {
+      grade = "FAIL";
+    } else if (0.8 <= progress <= 0.4) {
+      grade = "PASS";
       color = "#96E9C6";
-    } else if (progress > 0.8) {
-      grade = "Brilliant";
+    } else if (progress >= 0.8) {
+      grade = "DISTINCTION";
       color = "#19c6f1";
     }
 
@@ -208,4 +219,6 @@
   // animateProgress(0, 0.9, 2000, "progressCircle2", "English");
   // animateProgress(0, 0.7, 2000, "progressCircle3", "Maths");
 </script>
+
+
 {% endblock %}

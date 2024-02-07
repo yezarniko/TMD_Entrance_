@@ -81,8 +81,8 @@
         "no": 8,
         "question": "What is the smallest country in the world",
         "choices": {
-          "a": "Australia",
-          "b": "Canada",
+          "a": "Luxemborg",
+          "b": "Singapore",
           "c": "Vatican City"
         },
         "correct_answer": "c",
