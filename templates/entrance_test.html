@@ -31,9 +31,9 @@
     </div>
     <div class="timer"></div>
   </header>
-
+  <div class="cover"></div>
   <div class="container">
-    <form method="post" action="{{ url }}">
+    <form method="post" action="{{ url }}" class="test_form">
       {% for q in test %}
       <div class="quiz-container">
         <div class="question">
@@ -53,7 +53,9 @@
       {% endfor %}
       <div class="submitbutton">
         <!-- <a href="/g{{grade}}test{{numbering_map[subject]}}"> -->
-        <button id="submit-btn" type="submit">{{"submit" if subject == "maths" else "next" }}</button>
+        <button id="submit-btn" type="submit">
+          {{"submit" if subject == "maths" else "next" }}
+        </button>
         <!-- </a> -->
       </div>
     </form>
@@ -74,7 +76,7 @@
       </div>
     </section>
     {% if subject == "myanmar" %}
-    <section class=" section UID">
+    <section class="section UID">
       <!-- <button class="show-modal">Show Modal</button> -->
 
       <div class="modal-box">
@@ -92,7 +94,6 @@
 
         <div class="buttons">
           <button onclick="closeBTN()">Ok</button>
-          
         </div>
       </div>
     </section>
@@ -106,15 +107,14 @@
         </div>
         <br />
         <h4>Are you sure you want to start</h4>
-        
 
         <!-- <h3>You have sucessfully downloaded all the source code files.</h3> -->
 
         <div class="buttons">
           <button onclick="closeBTN2()">Ok</button>
-          <a href="/entrance/"> 
+          <a href="/entrance/">
             <button>close</button>
-           </a>
+          </a>
         </div>
       </div>
     </section>
@@ -122,79 +122,81 @@
   </div>
 
   <script>
-    var timer = document.querySelector(".timer");
-    var clockElement = document.querySelector(".clock");
-    var timeupSound = new Audio(
-      "{{ url_for('static', filename='214pJH6qg8U.m4a') }}"
-    );
+     var timer = document.querySelector(".timer");
+     var clockElement = document.querySelector(".clock");
+     var timeupSound = new Audio(
+       "{{ url_for('static', filename='214pJH6qg8U.m4a') }}"
+     );
 
-    var closeBTN = () => {
-      document.querySelector(".UID").classList.remove("active");
-    };
-    var closeBTN2 = () => {
-      document.querySelector(".confirm").classList.remove("active"); 
-      document.querySelector(".UID").classList.add("active");
-      startTimer(function () {
-      seconds = seconds - 1;
-      timer.style.width = `${(100 / SECONDS) * seconds}%`;
+     var closeBTN = () => {
+       document.querySelector(".UID").classList.remove("active");
+       document.querySelector(".test_form").style.display = "block";
+     };
+     var closeBTN2 = () => {
+       document.querySelector(".confirm").classList.remove("active");
+       document.querySelector(".UID").classList.add("active");
+       startTimer(function () {
+       seconds = seconds - 1;
+       timer.style.width = `${(100 / SECONDS) * seconds}%`;
 
-      if (seconds < 60) {
-        timer.style.background = "#FF6868";
-      }
+       if (seconds < 60) {
+         timer.style.background = "#FF6868";
+       }
 
-      clockElement.innerHTML = secondsToTimeFormat(seconds);
-    });
-    };
+       clockElement.innerHTML = secondsToTimeFormat(seconds);
+     });
+     };
 
-    const SECONDS = parseInt("{{2700 if subject == 'maths' else 900}}");
-    var seconds = SECONDS;
+     const SECONDS = parseInt("{{2700 if subject == 'maths' else 900}}");
+     var seconds = SECONDS;
 
-    function startTimer(callback) {
-      const intervalId = setInterval(callback, 1000);
+     function startTimer(callback) {
+       const intervalId = setInterval(callback, 1000);
 
-      setTimeout(function () {
-        clearInterval(intervalId);
-        console.log("Timer expired");
-        timeupSound.play();
-        section.classList.add("active");
-      }, SECONDS * 1000);
-    }
+       setTimeout(function () {
+         clearInterval(intervalId);
+         console.log("Timer expired");
+         timeupSound.play();
+         section.classList.add("active");
+       }, SECONDS * 1000);
+     }
 
-    function secondsToTimeFormat(seconds) {
-      const date = new Date(0);
-      date.setSeconds(seconds);
+     function secondsToTimeFormat(seconds) {
+       const date = new Date(0);
+       date.setSeconds(seconds);
 
-      const formattedTime = date.toISOString().substr(14, 5);
+       const formattedTime = date.toISOString().substr(14, 5);
 
-      return formattedTime;
-    }
+       return formattedTime;
+     }
 
-   {% if subject != "myanmar" %}
-   startTimer(function () {
-      seconds = seconds - 1;
-      timer.style.width = `${(100 / SECONDS) * seconds}%`;
+    {% if subject != "myanmar" %}
+    document.querySelector(".test_form").style.display = "block";
+    startTimer(function () {
+       seconds = seconds - 1;
+       timer.style.width = `${(100 / SECONDS) * seconds}%`;
 
-      if (seconds < 60) {
-        timer.style.background = "#FF6868";
-      }
+       if (seconds < 60) {
+         timer.style.background = "#FF6868";
+       }
 
-      clockElement.innerHTML = secondsToTimeFormat(seconds);
-    });
-   {% endif %}
+       clockElement.innerHTML = secondsToTimeFormat(seconds);
+     });
+    {% endif %}
 
-    const section = document.querySelector("section"),
-      //   overlay = document.querySelector(".overlay"),
-      //   showBtn = document.querySelector(".show-modal"),
-      closeBtn = document.querySelector(".close-btn");
+     const section = document.querySelector("section"),
+       //   overlay = document.querySelector(".overlay"),
+       //   showBtn = document.querySelector(".show-modal"),
+       closeBtn = document.querySelector(".close-btn");
 
-    // showBtn.addEventListener("click", () => section.classList.add("active"));
+     // showBtn.addEventListener("click", () => section.classList.add("active"));
 
-    // overlay.addEventListener("click", () => section.classList.remove("active"));
+     // overlay.addEventListener("click", () => section.classList.remove("active"));
 
-    closeBtn.addEventListener("click", () => {
-      section.classList.remove("active");
-      window.location.href = "/entrance";
-    });
+     closeBtn.addEventListener("click", () => {
+       section.classList.remove("active");
+       window.location.href = "/entrance";
+     });
   </script>
 </body>
 

@@ -55,6 +55,10 @@ body {
     flex-direction: column;
     align-items: center;
   }
+
+  .test_form {
+    display: none;
+  }
   
   .quiz-container {
     background-color: #fff;

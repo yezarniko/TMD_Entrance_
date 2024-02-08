@@ -30,6 +30,10 @@ body {
     align-items: center;
 }
 
+.test_form {
+  display: none;
+}
+
 .logo-left,
 .logo-right {
   max-height: 70px; /* Adjust the maximum height as needed */
